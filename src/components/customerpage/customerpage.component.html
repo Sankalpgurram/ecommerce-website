@@ -1,0 +1,215 @@
+<app-inventory></app-inventory>
+
+<section>
+    <div class="customer-box">
+        <div class="details">
+            <div class="header1">
+                <div class="search-box">
+                    <div class="search-container" id="search-container">
+                        <div class="btn">
+                            <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                                alt="image" (click)="moveImage()" (click)="movetext()">
+                        </div>
+
+                        <input type="text" placeholder="plants, seeds, fertilizers...." name="search"
+                            id="search-container" style="border:none; color:#828282B2;background-color: transparent;"
+                            [(ngModel)]="search" [class.shift]="isshift " (click)="movetext()" (click)="moveImage()"
+                            [readOnly]="!ismoved">
+
+                    </div>
+                    <img class="profile" src="assets/pics/Profile.jpg">
+                </div>
+            </div>
+
+            <div class="customers">
+                <div class="customer-head">
+                    <div class="head2">
+                        <p class="customer1"> Customers </p>
+                        <div class="sort">
+                            <p class="sortby"> Sort by : </p>
+                            <div class="dropdown3">
+                                <button class="year" (click)="show()">
+                                    <p class="amount"> {{selectedbtn}}</p>
+                                    <img class="arrow" src="/assets/pics/drop.png">
+                                </button>
+                                <div class="drop-content3" *ngIf="showdata">
+                                    <p class="clearall" (click)="clearSort()"> Clear All</p>
+                                    <div class="sort-box">
+                                        <div class="upper-box">
+                                            <div class="order-id" *ngFor="let k of sort">
+                                                <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'"
+                                                    [value]="k.value" [(ngModel)]="selectedbtn">
+                                                <label [for]="'radio-' + k.id" id="order"
+                                                    name="order">{{k.name}}</label>
+
+                                            </div>
+                                        </div>
+                                        <div class="line2">
+
+                                        </div>
+                                        <div class="down-box">
+                                            <div class="ascending">
+                                                <img class="up-arrow" src="/assets/pics/up.png">
+                                                <p class="text4" (click)="sorting('asc')"> Ascending</p>
+                                            </div>
+                                            <div class="descending">
+                                                <img class="down-arrow" src="/assets/pics/down.png">
+                                                <p class="text5" (click)="sorting('dsc')"> Descending</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}"
+                                (click)="visible()" class="filter">
+                                Filter
+                            </button>
+                            <div class="drop-content2" *ngIf="showcontent">
+                                <div class="filter-box">
+                                    <div class="left">
+                                        <div class="left-order">
+                                            <div class="box13" *ngFor="let k of filter"
+                                                [ngStyle]="{'background': k.background}"
+                                                (click)="changecolor(k.name)">
+                                                <p class="order-name">
+                                                    {{k.name}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                    </div>
+                                    <div class="right">
+                                        <p class="clear" (click)="clearFilters()">Clear All</p>
+                                        <div class="date">
+                                            <div class="date-picker">
+                                                <label for="id" class="end-date"> From</label>
+                                                <input type="date" id="calendar" [(ngModel)]="fromDate">
+                                            </div>
+
+                                            <div class="date-picker1">
+                                                <label for="id" class="to"> To</label>
+                                                <input type="date" id="calendar" [(ngModel)]="toDate">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button-box">
+                                    <button class="close" (click)="visible()">
+                                        <p class="text1">
+                                            Close
+                                        </p>
+                                    </button>
+
+                                    <button class="apply" (click)="applyFilter()" (click)="visible()">
+                                        <p class="text2">
+                                            Apply
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-info">
+                    <div class="header2">
+                        <div class="header3" *ngFor="let h of allitems?.header;let j=index">
+                            <!-- <input *ngIf="j==0" type="checkbox" id="user1"> -->
+                            <p id="user2" [innerHTML]="h.name"> </p>
+                        </div>
+                    </div>
+                    <div *ngFor="let k of pageditems; let i = index;">
+
+                        <div class="list">
+                            <div class="main-content">
+                                <div class="userid">
+                                    <!-- <input type="checkbox" id="user1"> -->
+                                    <p class="customer-id"> {{k.id}}</p>
+                                </div>
+
+                                <div class="customer-name">
+                                    <!-- <img class="man" src="{{k.img}}"> -->
+                                    <p class="name"> {{k.username || '-'}}</p>
+                                </div>
+
+                                <p class="items">
+                                    {{k.ordercount || '-'}}
+                                </p>
+
+                                <div class="email">
+                                    <p class="user-email">
+                                        ₹{{k.totalspend || '-'}}
+                                    </p>
+                                </div>
+
+                                <div class="phone-no">{{k.signupDate || '-'}}</div>
+                                <div class="more">
+                                    <img class="dots" (click)="toggle(i)"
+                                        [src]="selecteditemindex === i ? nextImagesrc : '/assets/pics/eye.png'">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="customerbox" *ngIf="selecteditemindex === i">
+
+
+
+                            <div class="detail-box">
+                                <div class="box1">
+                                    <div class="box2">
+                                        <p class="header4"> Customer Details</p>
+                                        <div class="user-details">
+                                            <div class="left-box">
+                                                <p class="user"> Email Id </p>
+                                                <p class="user"> Contact </p>
+                                                <p class="user"> Address </p>
+                                            </div>
+                                            <div class="right">
+                                                <p class="user1"> <span class="colon">:</span>{{ k.email || '-'}} </p>
+                                                <p class="user1"> <span class="colon">:</span>{{ k.phone || '-' }} </p>
+                                                <p class="user1"> <span class="colon">:</span> {{ k.address || '-' }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box4">
+                                        <div class="box5">
+                                            <div class="leftbox">
+                                                <p class="order-placed"> Last Order Placed</p>
+                                                <p class="order-placed"> Preferred Payment Method </p>
+                                            </div>
+                                            <div class="rightbox">
+                                                <p class="order-placed"> : {{ k.lastOrderDate || '-' }}</p>
+                                                <p class="order-placed"> : {{ k.paymentMethod || '-' }} </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <a class="number" *ngFor="let page of [].constructor(totalpages); let i = index" 
+           (click)="gotopage(i+1)">
+            {{ i + 1 }}
+        </a>
+         
+    </div>
+    
+</section>

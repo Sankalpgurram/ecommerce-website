@@ -1,3 +1,49 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { HomeComponent } from './pages/home/home.component';
+import { CategoryComponent } from '../components/category/category.component';
+import { PlantsComponent } from '../components/plants/plants.component';
+import { AboutusComponent } from '../components/aboutus/aboutus.component';
+import { BlogpageComponent } from '../components/blogpage/blogpage.component';
+import { PotspageComponent } from '../components/potspage/potspage.component';
+import { SeedpageComponent } from '../components/seedpage/seedpage.component';
+import { LoginpageComponent } from '../components/loginpage/loginpage.component';
+import { ProductInfoComponent } from '../components/product-info/product-info.component';
+import { CartComponent } from '../components/cart/cart.component';
+import { InventoryComponent } from '../components/inventory/inventory.component';
+import { InventoryProductsComponent } from '../components/inventory-products/inventory-products.component';
+import { CustomerpageComponent } from '../components/customerpage/customerpage.component';
+import { OrdersComponent } from '../components/orders/orders.component';
+import { AddProductComponent } from '../components/add-product/add-product.component';
+import { PromotionsComponent } from '../components/promotions/promotions.component';
+import { AddBannerComponent } from '../components/add-banner/add-banner.component';
+import { PaymentsComponent } from '../components/payments/payments.component';
+import { OrderReturnComponent } from '../components/order-return/order-return.component';
+import { DashboardComponent } from '../components/dashboard/dashboard.component';
+import { SignupPageComponent } from '../components/signup-page/signup-page.component';
+import { CheckoutpageComponent } from '../components/checkoutpage/checkoutpage.component';
+import { ConfirmationpageComponent } from '../components/confirmationpage/confirmationpage.component';
+export const routes: Routes = [
+    { path: '', component: HomeComponent },
+    { path: 'category', component: CategoryComponent },
+    { path: 'plants', component: PlantsComponent },
+    { path: 'aboutus', component: AboutusComponent },
+    { path: 'blogpage', component: BlogpageComponent },
+    { path: 'potspage', component: PotspageComponent },
+    { path: 'seedspage', component: SeedpageComponent },
+    { path: 'login', component: LoginpageComponent },
+    { path: 'product-info', component: ProductInfoComponent },
+    { path: 'cart', component: CartComponent },
+    { path: 'inventory', component: InventoryComponent },
+    { path: 'inventory-products', component: InventoryProductsComponent },
+    { path: 'customer', component: CustomerpageComponent },
+    { path: 'orders', component: OrdersComponent },
+    { path: 'add-product', component: AddProductComponent },
+    { path: 'promotions', component: PromotionsComponent },
+    { path: 'add-banner', component: AddBannerComponent },
+    { path: 'payments', component: PaymentsComponent },
+    { path: 'myorders', component: OrderReturnComponent },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'sign-up', component: SignupPageComponent },
+    { path: 'checkout', component: CheckoutpageComponent },
+    {path:'confirm',component:ConfirmationpageComponent}
+];

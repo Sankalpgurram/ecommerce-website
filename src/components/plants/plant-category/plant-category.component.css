@@ -1,0 +1,289 @@
+section {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    gap: 16px;
+    padding-right: 11px;
+    padding-left: 10px;
+    background: linear-gradient(0deg, #F1FEF1 0%, #F6F8F6 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+flex-wrap: wrap;
+     
+}
+
+ 
+
+.cards {
+    width: 270px;
+    height: 338px;
+    border-radius: 20px;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #61636033;
+    box-shadow: 0px 0px 4px 0px #00000014;
+    margin: 13px;
+    margin-left: 6px;
+    margin-top: 10px;
+ cursor: pointer;
+}
+
+.plant{
+    font-family: Inter;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #616360;
+width: 79px;
+height: 18px;
+margin-left: 15px;
+margin-top: 18px;
+ 
+}
+
+.name{
+    font-family: Inter;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #000000;
+width: 210px;
+height: 24px;
+margin-left: 15px;
+ 
+}
+
+.amount{
+    width: 88px;
+height: 24px;
+font-family: Inter;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 0%;
+color:  #002D3E;
+margin-left: 17px;
+ 
+
+}
+
+.image{
+    border-top-right-radius: 7%;
+    border-top-left-radius: 6%;
+    width: 268px;
+    
+}
+
+.amt{
+    font-family: Inter;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: var(--Blue-Color, #002D3E);
+ 
+
+}
+
+.like{
+    display: flex;
+    justify-content: right;
+    margin: 14px;
+    margin-top: -74px;
+    
+}
+
+ 
+
+  
+
+
+
+
+
+
+  .img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 6%;
+    height: 233px;
+  }
+  
+  .cart-btn {
+    height: 40px;
+    width: 167px;
+    gap: 8px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    border-radius: 48px;
+    background: white;
+    border: none;
+    margin-top: 166px;
+    cursor: pointer;
+  }
+  
+
+  .cart-btn:hover{
+    background: linear-gradient(105.35deg, #E7F7EF 4.94%, #BEEED5 90.7%);
+    box-shadow: 0px 0px 11.7px 0px #4D8C6B80;
+  }
+  
+  .cards:hover .overlay {
+    opacity: 1;
+  }
+  
+
+.main-section{
+  background: linear-gradient(0deg, #F1FEF1 0%, #F6F8F6 100%);
+ 
+}
+
+ .footer-content{
+  width: 454px;
+  height: 58px;
+ 
+ }
+
+
+ .pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 46px;
+  margin-left: 270px;
+
+}
+
+.pagination a {
+  color: #002D3E;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  font-family: Inter;
+font-weight: 700;
+
+line-height: 100%;
+letter-spacing: -2%;
+
+}
+
+.pagination a:hover {background-color:#002D3E;}
+
+.number:hover{
+  color: #FFFFFF!important;
+}
+
+.next:hover{
+  background-color:#002D3E;
+}
+
+ .btn-text:hover{
+  color: #FFFFFF!important;
+}
+
+.number{
+  justify-content: flex-start;
+  width: 41px;
+  height: 40px;
+  border-radius: 64%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+}
+
+
+.next{
+  width: 77px;
+  height: 36px;
+  gap: 8px;
+  border-radius: 8px;
+  padding-top: 21px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-width: 1px;
+  border: 1px solid #BAD8C9;
+  background-color: transparent;
+  margin-top: -5px;
+}
+
+.btn-text{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #002D3E;
+  margin-left: -22px;
+  margin-top: -10px;
+  width: 70px;
+  height: 29px;
+}
+
+
+
+.delete {
+  position: absolute;
+    top: 9px;
+    right: 7px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 1px 4px 0px #00000040;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    width: 31px;
+    height: 30px;
+    border-radius: 26px;
+
+
+}
+
+.bin {
+  width: 23px;
+  height: 20px;
+  margin-top: 3px;
+  margin-left: 1px;
+}
+
+
+ 
+
+.number.active {
+  background-color: #002D3E;  
+  color: white !important;
+  font-weight: bold;
+  border-radius: 64%;
+}

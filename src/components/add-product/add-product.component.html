@@ -1,0 +1,159 @@
+<app-inventory></app-inventory>
+
+<section>
+    <div class="product-box">
+        <div class="info-box">
+
+            <div class="header1">
+                <button class="circle" routerLink="/inventory-products"><img class="arrow"
+                        src="/assets/pics/Icon (11).png "></button>
+                <p class="para1">Products > Add Item</p>
+            </div>
+            <div class="product-info">
+                <form  (ngSubmit)="onSubmit(productform)" #productform="ngForm" >
+                    <div class="header2">
+                        <p class="header3"> Add Product</p>
+                    </div>
+
+                    <div class="plant-details">
+                        <div class="left-box">
+                            <div class="box1">
+                                <label for="id" class="id"> Product ID</label>
+                                <input type="text" id="product-id" name="product-id" required [(ngModel)]="product.id" #productid="ngModel">
+                            </div>
+
+                            <div class="box2">
+                                <label for="id" class="id"> Product Name</label>
+                                <input type="text" id="product-name" name="product-name" [(ngModel)]="product.name"  #productname="ngModel"
+                                    placeholder="Your product name here">
+                            </div>
+
+                            <div class="box3">
+                                <label for="id" class="id"> Description</label>
+                                <input type="text" id="product-description" name="product-description"
+                                    [(ngModel)]="product.type" placeholder="your text here"  #productdescription="ngModel">
+                            </div>
+
+                            <div class="box4">
+                                <label for="id" class="id"> Category</label>
+                                <select id="plants" name="plants" [(ngModel)]="product.category"  #productcategory="ngModel">
+                                    <option>Plants</option>
+                                    <option>Pots</option>
+                                    <option>Seeds</option>
+                                    <option>Accesories</option>
+                                </select>
+                            </div>
+
+
+                            <div class="box5">
+                                <div class="innerbox1">
+                                    <label for="id" class="id"> SKU</label>
+                                    <select id="sku" name="sku" [(ngModel)]="product.sku">
+                                        <option selected>Select your Unit</option>
+                                        <option>X</option>
+                                        <option>Y</option>
+                                        <option>Z</option>
+                                        <option>A</option>
+                                    </select>
+                                </div>
+                                <div class="innerbox2">
+                                    <label for="id" class="id"> Stock Quantity</label>
+                                    <input type="text" id="product-quantity" name="product-quantity"
+                                        [(ngModel)]="product.productquantity">
+                                </div>
+
+                            </div>
+
+                            <div class="box6">
+                                <div class="innerbox3">
+                                    <label for="id" class="id"> Regular Price</label>
+                                    <input type="text" id="price" name="price" [(ngModel)]="product.price" #productprice="ngModel">
+                                </div>
+
+                                <div class="innerbox4">
+                                    <label for="id" class="id"> Sale Price</label>
+                                    <input type="text" id="sale-price" name="sale-price"
+                                        [(ngModel)]="product.saleprice" #productsaleprice="ngModel">
+                                </div>
+                            </div>
+
+                            <div class="box7">
+                                <div class="innerbox5">
+                                    <label for="id" class="id"> Tax status</label>
+                                    <select id="sku" name="tax" [(ngModel)]="product.tax">
+                                        <option selected>Taxable</option>
+                                        <option>X</option>
+                                        <option>Y</option>
+                                        <option>Z</option>
+                                        <option>A</option>
+                                    </select>
+                                </div>
+
+                                <div class="innerbox6">
+                                    <label for="id" class="id"> Tax Class</label>
+                                    <select id="sku" name="taxclass" [(ngModel)]="product.taxclass">
+                                        <option selected>Standard</option>
+                                        <option>X</option>
+                                        <option>Y</option>
+                                        <option>Z</option>
+                                        <option>A</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- <div class="box8">
+                                <label for="id" class="id"> Tag</label>
+                                <div class="innerbox7">
+                                    <div class="innerbox8">
+                                        <div class="innerbox9">
+                                            <button class="custom" *ngFor="let i of custom">
+                                                <p class=custom-name>{{i.name}}</p><img class="cross" src="{{i.img}}">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                        <div class="right">
+                            <div class="gallery">
+                                <p class="product-gallery">Product Gallery</p>
+                                <div class="pics">
+
+                                    <div class="uploads" *ngFor="let file of files">
+                                        <img class="pic1" *ngIf="file" [src]="file.url">
+                                        <button class="delete" (click)="removeFile(file,$event)">
+                                            <img class="bin" src="/assets/pics/icon (13).png">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dragbox" appDrag (fileDropped)="filesDropped($event)"
+                                    *ngIf="files.length < 1">
+                                    <p id="target">
+                                        Drag & drop or <span class="browse"
+                                            (click)="fileInput.click(); $event.stopPropagation()"> Browse </span>
+                                        <span class="tagline"> (Maximum Size: 10 MB) </span>
+
+                                    </p>
+                                </div>
+                                <input type="file" #fileInput style="display: none;" (change)="filesSelected($event)"
+                                    accept="picture/*" multiple [(ngModel)]="product.image">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button type="submit" class="save" [disabled]="!productform.form.valid">
+                        <p class=save-btn>Save Product</p>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</section>

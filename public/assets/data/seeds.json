@@ -1,0 +1,33 @@
+{
+    "category":[
+        {"name": "Indoor Plants ","url": "assets/pics/Group 5.jpg","link":"/plants"
+    },
+    {"name": "Outdoor Plants","url": "assets/pics/image.jpg","link":"/plants"
+    },
+    {"name": "Pots and Accesories","url": "assets/pics/img.jpg","link":"/potspage"
+    },
+    {"name": "Gift & Combos","url": "assets/pics/plant.jpg","link":"/potspage"
+    },
+    {"name": "Seeds","url": "assets/pics/Group 7.jpg","link":"/seedspage"
+    }
+    ],
+
+    "seeds":[
+        {"type":"100g ","name":"Portulaca seeds","price":499,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 250g ","name":" Chayote fruit seeds","price":999,"isfavrouite":false,"rating":2.8,"image":"/assets/pics/seeds1.png "},
+    {"type":"150g","name":"Scabiosa Incisa seeds","price":299,"isfavrouite":false,"rating":1.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 100g","name":"Bottle Gourd seeds","price":399,"isfavrouite":false,"rating":4.6,"image":" /assets/pics/seeds4.png "},
+    {"type":"100g ","name":"Portulaca seeds","price":499,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 250g ","name":" Chayote fruit seeds","price":999,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/seeds1.png "},
+    {"type":"150g","name":"Scabiosa Incisa seeds","price":299,"isfavrouite":false,"rating":3.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 100g","name":"Bottle Gourd seeds","price":399,"isfavrouite":false,"rating":4.9,"image":" /assets/pics/seeds4.png "},
+    {"type":"100g ","name":"Portulaca seeds","price":499,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 250g ","name":" Chayote fruit seeds","price":999,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/seeds1.png "},
+    {"type":"150g","name":"Scabiosa Incisa seeds","price":299,"isfavrouite":false,"rating":2.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 100g","name":"Bottle Gourd seeds","price":399,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/seeds4.png "},
+    {"type":"100g ","name":"Portulaca seeds","price":499,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/seeds2.png"},
+    {"type":" 250g ","name":" Chayote fruit seeds","price":999,"isfavrouite":false,"rating":3.5,"image":"/assets/pics/seeds1.png "},
+    {"type":"150g","name":"Scabiosa Incisa seeds","price":299,"isfavrouite":false,"rating":4.5,"image":" /assets/pics/seeds4.png"},
+    {"type":" 100g","name":"Bottle Gourd seeds","price":399,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/seeds4.png "}
+    ]
+}

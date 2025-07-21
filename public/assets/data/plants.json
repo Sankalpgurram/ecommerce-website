@@ -1,0 +1,2694 @@
+{
+    "category":[
+      {"name": "Indoor Plant","url": "assets/pics/Group 5.jpg","link":"/plants","type":"plant"
+    },
+    {"name": "Outdoor Plant","url": "assets/pics/image.jpg","link":"/plants","type":"plant"
+    },
+    {"name": "Pots and Accesories","url": "assets/pics/img.jpg","link":"/potspage", "type":"route"
+    },
+    {"name": "Gift & Combos","url": "assets/pics/plant.jpg","link":"/potspage", "type":"route"
+    },
+    {"name": "Seeds","url": "assets/pics/Group 7.jpg","link":"/seedspage", "type": "route"
+    }
+    ],
+
+    "plants":[
+        
+
+  {
+    "id": "1",
+    "sales": 0,
+  "amount": 0,
+    "quantity":"20",
+    "status": "Healthy",
+    "plants": {
+      "type": "Outdoor Plant",
+      "name": "Caladium ",
+      "image": "/assets/pics/home.jpg",
+      "button": "In Stock",
+      "star": "/assets/pics/star.png",
+      "rate": "3.8",
+      "price": "999",
+      "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+    },
+    "description": {
+      "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+      "review": "2K"
+    },
+    "info": [
+      {
+        "attribute": "Plant Size",
+        "description": "Medium  (12-14 inches ) "
+      },
+      {
+        "attribute": " Watering Needs",
+        "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+      },
+      {
+        "attribute": " Light Requirements",
+        "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+      },
+      {
+        "attribute": " Maintenace levels",
+        "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+      },
+      {
+        "attribute": "Growth Rate",
+        "description": " Moderate (Moderate growth rate indoor) "
+      },
+      {
+        "attribute": "Pet Safety",
+        "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+      }
+    ],
+    "review": [
+      {
+        " name": "John Watson",
+        "date": "2 weeks ago",
+        "review1": " Amazing Product, Awesome! ",
+        "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+        "link": "/assets/pics/man.png",
+        "url": "/assets/pics/icon (5).png",
+        "stars": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "pics": [
+          {
+            "plant": "/assets/pics/plantpic.jpg"
+          },
+          {
+            "plant": "/assets/pics/pot2.jpg"
+          },
+          {
+            "plant": "/assets/pics/plantpic.jpg"
+          }
+        ]
+      },
+      {
+        "name": "John Watson",
+        "date": "1 Month ago",
+        "review1": " Amazing Product, Awesome! ",
+        "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+        "link": "/assets/pics/man.png",
+        "url": "/assets/pics/icon (5).png",
+        "stars": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "John Watson",
+        "date": "2 Months ago",
+        "review1": " Amazing Product, Awesome! ",
+        "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+        "link": "/assets/pics/man.png",
+        "url": "/assets/pics/icon (5).png",
+        "stars": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "rating": [
+      {
+        "star": "5 Star",
+        "height": "6px",
+        "width": "233px",
+        "borderradius": "24px",
+        "background": "#E8C91C"
+      },
+      {
+        "star": "4 Star",
+        "height": "6px",
+        "width": "187px",
+        "borderradius": "24px",
+        "background": "#E8C91C"
+      },
+      {
+        "star": "3 Star",
+        "height": "6px",
+        "width": "156px",
+        "borderradius": "24px",
+        "background": "#E8C91C"
+      },
+      {
+        "star": "2 Star",
+        "height": "6px",
+        "width": "75px",
+        "borderradius": "24px",
+        "background": "#E8C91C"
+      },
+      {
+        "star": "1 Star",
+        "height": "6px",
+        "width": "22px",
+        "borderradius": "24px",
+        "background": "#E8C91C"
+      }
+    ],
+    "feedback": [
+      {
+        "avgrate": "4.8",
+        "link": "/assets/pics/man.png",
+        "url": "/assets/pics/icon (5).png",
+        "stars": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ]
+  },
+  
+
+ 
+
+    {
+        "id": "2",
+        "quantity":"20",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "plants": {
+          "type": "Outdoor Plant",
+          "name": "Monstera deliciosa",
+          "image": "/assets/pics/product2.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "2.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+
+ 
+    {
+        "id": "3",
+        "quantity":"20",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Camellia",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.9",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+    {
+        "id": "4",
+        "sales": 0,
+        "amount": 0,
+        "quantity":"20",
+        "status": "Healthy",
+        "plants": {
+          "type": "Outdoor Plant",
+          "name": "Canada Lily",
+          "image": "/assets/pics/product4.jpg ",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+    {
+        "id": 5,
+        "sales": 0,
+        "amount": "0",
+        "status": "Healthy",
+        "quantity":"20",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Cardboard Palm",
+          "image": "/assets/pics/home.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+      {
+        "id": "6",
+        "status": "Healthy",
+        "sales": 0,
+        "amount": 0,
+        "quantity":"20",
+        "plants": {
+          "type": "Outdoor Plant",
+          "name": "Cardinal Flower",
+          "image": "/assets/pics/product2.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+   
+      {
+        "id": "7",
+        "quantity":"20",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Catmint",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "699",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+     {
+        "id": "8",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"20",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Chandelier Plant",
+          "image": "/assets/pics/product4.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+     {
+        "id": "9",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"20",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Chickpea Plant",
+          "image": "/assets/pics/home.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+      {
+        "id": "10",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"30",
+        "plants": {
+          "type": "Outdoor Plant",
+          "name": "Citronela Plant",
+          "image": "/assets/pics/home.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+      {
+        "id": "11",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"25",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Cobra Lily",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+     {
+        "id": "12",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"24",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Coral Cactus ",
+          "image": "/assets/pics/product4.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "3.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+     {
+        "id": "13",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"20",
+        "plants": {
+          "type": "Outdoor Plant",
+          "name": "Creeping Bellflower",
+          "image": "/assets/pics/home.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "399",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+     {
+        "id": "14",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"30",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Cotton Rose",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+ 
+     {
+        "id": "15",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"30",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": "Cup Plant",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.8",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+
+    {
+        "id": "16",
+        "sales": 0,
+        "amount": 0,
+        "status": "Healthy",
+        "quantity":"30",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": " Plant",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "4.9",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "17",
+        "status": "Healthy",
+        "sales": 0,
+        "amount": 0,
+        "quantity":"30",
+        "plants": {
+          "type": "Indoor Plant",
+          "name": " Rose",
+          "image": "/assets/pics/product3.jpg",
+          "button": "In Stock",
+          "star": "/assets/pics/star.png",
+          "rate": "3.5",
+          "price": "499",
+          "description": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with unique splits and holes, adding a touch of tropical  ..."
+        },
+        "description": {
+          "info": " The Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a popular tropical houseplant    prized for its stunning, large, heart-shaped leaves that develop unique perforations or 'fenestrations' as they mature. Native to the rainforests of Central and South America, this evergreen climber can grow  up to 10-15 feet indoors with proper care, though it's often kept smaller in pots. Its glossy, dark green leaves, which can reach up to 3 feet wide in ideal conditions, create a bold, exotic aesthetic, making it a favorite for interior decor and web design visuals. The plant's name,  'Monstera,' derives from the Latin word for 'monstrous,' referring to its impressive size, while    'Deliciosa' hints at its edible fruit, which tastes like a mix of pineapple and banana but is rarely  produced indoors.<br><br>Care Requirements: <br> <ul><li> Light: Thrives in bright, indirect light but tolerates low light (though growth may slow).</li><li> Water: Water when the top 1-2 inches of soil feel dry; avoid overwatering to prevent root rot.</li> <li> Soil: Prefers well-draining, peat-based potting mix. </li> <li> Humidity: Loves high humidity (50%+), but adapts to average household levels.</li> <li> Temperature: Best between 65-85°F (18-29°C); avoid cold drafts.</li><li> Support: As a climber, it benefits from a moss pole or trellis for vertical growth.</li></ul>",
+          "review": "2K"
+        },
+        "info": [
+          {
+            "attribute": "Plant Size",
+            "description": "Medium  (12-14 inches ) "
+          },
+          {
+            "attribute": " Watering Needs",
+            "description": "Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) "
+          },
+          {
+            "attribute": " Light Requirements",
+            "description": " Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves) "
+          },
+          {
+            "attribute": " Maintenace levels",
+            "description": " Easy (Great for beginners! Low-maintenance and resilient to occasional neglect) "
+          },
+          {
+            "attribute": "Growth Rate",
+            "description": " Moderate (Moderate growth rate indoor) "
+          },
+          {
+            "attribute": "Pet Safety",
+            "description": " No (Toxic to cats and dogs if ingested. Keep out of reach of pets) "
+          }
+        ],
+        "review": [
+          {
+            " name": "John Watson",
+            "date": "2 weeks ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "pics": [
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              },
+              {
+                "plant": "/assets/pics/pot2.jpg"
+              },
+              {
+                "plant": "/assets/pics/plantpic.jpg"
+              }
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "1 Month ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "John Watson",
+            "date": "2 Months ago",
+            "review1": " Amazing Product, Awesome! ",
+            "review2": "Loved the Plant. Definitely worth it for Plant lovers!",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rating": [
+          {
+            "star": "5 Star",
+            "height": "6px",
+            "width": "233px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "4 Star",
+            "height": "6px",
+            "width": "187px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "3 Star",
+            "height": "6px",
+            "width": "156px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "2 Star",
+            "height": "6px",
+            "width": "75px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          },
+          {
+            "star": "1 Star",
+            "height": "6px",
+            "width": "22px",
+            "borderradius": "24px",
+            "background": "#E8C91C"
+          }
+        ],
+        "feedback": [
+          {
+            "avgrate": "4.8",
+            "link": "/assets/pics/man.png",
+            "url": "/assets/pics/icon (5).png",
+            "stars": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+
+
+
+}

@@ -1,0 +1,51 @@
+<div class="main-content">
+    <section>
+        <div class="cards" *ngFor="let card of pageditems">
+
+            <div class="img">
+
+                <img class="image" [src]="card.image">
+                <button class="delete">
+                    <img class="bin" src="/assets/pics/Icon (14).png">
+                </button>
+                <div class="overlay">
+                    <button class="cart-btn" (click)="addtocart(card,$event)"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="head">
+                        <p class="plant"> {{card.type}} </p>
+                    </div>
+                    <div class="name">
+                        {{card.name}}
+                    </div>
+                    <div class="amount">
+                        From <span class="amt">₹{{card.price}} </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="like">
+                        <img class="icon" src="/assets/pics/icon.jpg " style="width:12px;height:12px;">{{card.rating}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <div class="footer">
+
+        <div class="footer-content">
+            <div class="pagination">
+                <div class="pagination">
+                    <a *ngFor="let page of pageNumbers" class="number" [ngClass]="{ 'active': currentpage === page }"
+                        (click)="gotopage(page)">
+                        {{ page }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="main-section">
+    <section>
+        <div class="cards" (click)="transferdata(card)" *ngFor="let card of pageditems,let i=index;">
+
+            <div class="img">
+                <img class="image" [src]="card.plants.image">
+                <button class="delete"  (click)="toggle(i,$event)" >
+                    <img class="bin" 
+                    [src]="selecteditemindex === i ? nextImagesrc : '/assets/pics/like.jpg'">
+                </button>
+                <div class="overlay">
+                    <button class="cart-btn" (click)="addtocart(card.plants, $event); $event.stopPropagation()"> Add to
+                        Cart</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="head">
+                        <p class="plant"> {{card.plants.type}} </p>
+                    </div>
+                    <div class="name">
+                        {{card.plants.name}}
+                    </div>
+                    <div class="amount">
+                        From <span class="amt">₹{{card.plants.price}} </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="like">
+                        <img class="icon" src="/assets/pics/icon.jpg "
+                            style="width:12px;height:12px;">{{card.plants.rate}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="pagination">
+                <a *ngFor="let page of pageNumbers" class="number" [ngClass]="{ 'active': currentpage === page }"
+                    (click)="gotopage(page)">
+                    {{ page }}
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

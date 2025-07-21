@@ -1,0 +1,269 @@
+<section>
+
+    <div class="box">
+        <div class="left-box">
+            <div class="address-box" *ngIf="showDiv1">
+                <div class="shipping">
+                    <div class="box1">
+                        <img class="icon1" src="/assets/pics/Vector (3).png">
+                        <p class="delivery-name">
+                            Delivering to {{displayaddress.name}}
+                        </p>
+                    </div>
+                    <p class="address">{{displayaddress.address}}, {{displayaddress.city}}, {{displayaddress.pincode}}
+                    </p>
+                </div>
+                <button class="change" (click)="toggle()">
+                    Change
+                </button>
+            </div>
+
+            <div class="add-address" *ngIf="!showDiv1">
+                <div class="box8">
+                    <p class="add-details">
+                        Add Delivery Details
+                    </p>
+                </div>
+
+                <div class="user-details">
+                    <div class="innerbox5">
+                        <p class="id"> Name</p>
+                        <input type="text" id="name" name="name" [(ngModel)]="useraddress.name">
+                    </div>
+                    <div class="innerbox6">
+                        <p class="id"> Mobile Number</p>
+                        <input type="text" id="mobile" name="mobile" [(ngModel)]="useraddress.mobile">
+                    </div>
+                </div>
+
+                <div class="box10">
+                    <div class="innerbox7">
+                        <p class="id"> Email</p>
+                        <input type="email" id="email" name="name" [(ngModel)]="useraddress.email">
+                    </div>
+                    <div class="innerbox8">
+                        <p class="id"> City</p>
+                        <input type="text" id="city" name="city" [(ngModel)]="useraddress.city">
+                    </div>
+                </div>
+
+
+                <div class="box11">
+                    <div class="innerbox9">
+                        <p class="id"> State</p>
+                        <input type="text" id="State" name="state" [(ngModel)]="useraddress.state">
+                    </div>
+                    <div class="innerbox10">
+                        <p class="id"> Pincode</p>
+                        <input type="text" id="pincode" name="pincode" [(ngModel)]="useraddress.pincode">
+                    </div>
+                </div>
+
+
+                <div class="box12">
+                    <p class="id"> Address</p>
+                    <input type="text" id="address" name="address" [(ngModel)]="useraddress.address">
+                </div>
+
+                <div class="box13">
+                    <button class="cancel" (click)="cancel()">
+                        Cancel
+                    </button>
+                    <button class="save-btn" (click)="toggle()">
+                        Save Details
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="payment-box">
+                <p class="para1">
+                    Select payment method
+                </p>
+                <div class="paymentmode">
+
+                    <div class="card" *ngFor="let i of payment" [ngStyle]="{'border': i.border}"
+                        (click)="changesize(i.id)" [ngClass]="{
+                        'card-style': i.name === 'Card',
+                        'wallet': i.name === 'Wallet',
+                        'upi': i.name === 'UPI',
+                        'bank':i.name === 'Bank Transfer',
+                      }">
+                        <img src="{{i.icon}}">
+                        {{i.name}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="coupon-box">
+                <!-- <div class="box2">
+                    <div class="box3">
+                        <p class="addcode">
+                            Add Coupon Code
+                        </p>
+                        <input type="text" id="coupon" name="coupon">
+                    </div>
+                    <p class="allcoupon"> All Coupons</p>
+                </div> -->
+            </div>
+
+            <div class="card-box">
+                <div class="saved-cards">
+                    <p class="header3"> Saved Cards</p>
+                    <div class="box4">
+                        <div class="card1" *ngFor="let k of cards">
+                            <input type="checkbox" id="checkbox">
+                            <img class="card-icon" src="{{k.img}}">
+                            <p class="card-no">{{k.number}} </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="or">
+                    - OR -
+                </p>
+                <div class="add-card">
+                     <p class="header4">
+                        Add Card
+                    </p> 
+                    <div class=card-details>
+                        <div class="box5">
+                            <div class="innerbox1">
+                                <label for="id" class="id"> Card Type </label>
+                                <select id="cardtype" name="card">
+                                    <option selected>Credit Card</option>
+                                    <option>Debit Card</option>
+
+                                </select>
+                            </div>
+
+                            <div class="innerbox2">
+                                <label for="id" class="id"> Bank</label>
+                                <select id="bank" name="bank">
+                                    <option selected>ICICI</option>
+                                    <option>AXIS BANK</option>
+                                    <option>HDFC BANK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-number">
+                            <p class="id"> Card Number </p>
+                            <input type="text" id="cardnum" name="card-no">
+                        </div>
+
+                        <div class="card-name">
+                            <p class="id"> Name on Card </p>
+                            <input type="text" id="cardname" name="cardname">
+                        </div>
+
+                        <div class="box6">
+                            <div class="innerbox3">
+                                <label for="id" class="id"> Expiry Date </label>
+                                <input type="text" id="date" name="date">
+                            </div>
+
+                            <div class="innerbox4">
+                                <label for="id" class="id"> Security Code (CVV)</label>
+                                <input type="text" id="cvv" name="cvv">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="savecard" style="margin-bottom:30px">
+                        <!-- <input type="checkbox" id="check">
+                        <p class="savecards"> Save Card</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+
+        </div>
+        <div class="right">
+            <div class="right-box">
+                <div class="cart">
+                    <div class="cart-box">
+                        <div class="price-details">
+                            Price Details
+                        </div>
+                        <div class="item-details">
+                            <div class="items">
+                                <div class="box7">
+                                    <p class="bill">
+                                        Items
+                                    </p>
+                                    <p class="quantity">
+                                        {{totalitems}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="box7">
+                                    <p class="bill">
+                                        Total MRP
+                                    </p>
+                                    <p class="quantity">
+                                        ₹{{totalMRP}}
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <div class="box7">
+                                    <p class="bill">
+                                        Taxes
+                                    </p>
+                                    <p class="quantity">
+                                        ₹{{tax}}
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <div class="box7">
+                                    <p class="bill">
+                                        Shipping
+                                    </p>
+                                    <p class="free">
+                                        Free
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="line2">
+
+                            </div>
+                        </div>
+
+                        <div class="total">
+                            <div class="totalamount">
+                                <p class="text1">Total Amount</p>
+                                <p class="price">
+                                    ₹{{totalamount}}
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <img class="computer" src="/assets/pics/laptop and credit card.png">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<div class="paybox">
+    <div class="pay">
+        <button class="back" [routerLink]="['/cart']">
+            Back
+        </button>
+        <button class="pay-btn" (click)="placeorder()" [routerLink]="['/confirm']">
+            Pay ₹ {{totalamount}}
+        </button>
+    </div>
+</div>

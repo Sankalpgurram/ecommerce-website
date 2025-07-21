@@ -1,0 +1,73 @@
+{
+    "plants" :[
+        {
+          "type": "Indoor Plant", "name": "Mostera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+        },
+    
+        {
+          "type": "Indoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+        },
+    
+        {
+          "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+        },
+    
+        {
+          "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+        },
+    
+        {
+          "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+        },
+    
+        {
+          "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+        },
+    
+
+        {
+            "type": "Indoor Plant", "name": "Mostera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+          },
+      
+          {
+            "type": "Indoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+          },
+      
+          {
+            "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+          },
+      
+          {
+            "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+          },
+      
+          {
+            "type": "Outdoor Plant", "name": "Monstera deliciosa", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+          },
+      
+          {
+            "type": "Indoor Plant", "name": "Cactus", "price": "499", "info": "The Monstera Deliciosa plant, also known as the 'cheese plant,' boasts large, glossy leaves with ..", "pic": "/assets/pics/product3.jpg",
+          "sales": "Sales", "img": "/assets/pics/Icon (10).png", "value": "1256","amount":"Amount","value2":"31,256","review":"Reviews", "star":"/assets/pics/star.png","rate":"4.8", "feedback":"(246)"
+          }
+
+    
+      ]
+
+    
+
+      
+
+
+
+}

@@ -1,0 +1,35 @@
+<section>
+    <div class="left">
+        <div class="box">
+            <img class="rect" src=" /assets/pics/Group14.png">
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="content">
+            <div class="info">
+                <div class="header">
+                    <h2 class="head"> Need Help? </h2>
+                </div>
+                <p class="para"> Hey there, green thumb! Ready for your next step?<br>
+                    Let me guide you based on where you are.</p>
+                <br>
+            </div>
+            <p class="para2"> Where are you right now?</p>
+            <!-- <button class="btn1" *ngFor="let card of cards"><p class="p1"> {{card.name}}</p><img class="arrow" src=" /assets/pics/arrow.png"> </button> -->
+            <div class="container" *ngFor="let card of needhelp; let i = index">
+                <button (click)="accord(i)" class="accordion">
+                  <p class="p1">{{card.name}}</p>
+                  <img class="arrow" src="/assets/pics/arrow.png">
+                </button>
+                <div class="panel" *ngIf="open === i">
+                  <div class="infosize">
+                    <p class="cardinfo" [innerHTML]="card.info"></p>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+
+</section>

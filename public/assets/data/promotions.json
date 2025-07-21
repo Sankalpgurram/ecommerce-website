@@ -1,0 +1,21 @@
+{
+      
+"promotion":[
+    {"img":"/assets/pics/plantss.jpg","name":"Week Grean Deal","location":"Homepage","web":"web","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Summer Harvest sale","location":"Category","web":"Both","date":"1 May - 8 May","status":"Expired","url":"/assets/pics/red.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Environment Day Deal","location":"Homepage","web":"web","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"End of season","location":"Product","web":"Mobile","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Week Green Deal","location":"Category","web":"web","date":"1 May - 8 May","status":"Expired","url":"/assets/pics/red.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Plants Day Deal","location":"Homepage","web":"web","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Summer Harvest sale","location":"Category","web":"Both","date":"1 May - 8 May","status":"Expired","url":"/assets/pics/red.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Week Grean Deal","location":"Homepage","web":"web","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Summer Harvest sale","location":"Category","web":"Both","date":"1 May - 8 May","status":"Expired","url":"/assets/pics/red.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Environment Day Deal","location":"Homepage","web":"web","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"End of season","location":"Product","web":"Mobile","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Week Green Deal","location":"Category","web":"web","date":"1 May - 8 May","status":"Expired","url":"/assets/pics/red.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Plants Day Deal","location":"Homepage","web":"web","date":"1 May - 8 May","status":"Live","url":"/assets/pics/delivered.png"},
+    {"img":"/assets/pics/plantss.jpg","name":"Winter sale","location":"Category","web":"Both","date":"1 June - 8 June","status":"Expired","url":"/assets/pics/red.png"}
+  ]
+  
+
+}

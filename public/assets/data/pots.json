@@ -1,0 +1,33 @@
+{
+    "category":[
+        {"name": "Indoor Plants ","url": "assets/pics/Group 5.jpg","link":"/plants"
+    },
+    {"name": "Outdoor Plants","url": "assets/pics/image.jpg","link":"/plants"
+    },
+    {"name": "Pots and Accesories","url": "assets/pics/img.jpg","link":"/potspage"
+    },
+    {"name": "Gift & Combos","url": "assets/pics/plant.jpg","link":"/potspage"
+    },
+    {"name": "Seeds","url": "assets/pics/Group 7.jpg","link":"/seedspage"
+    }
+    ],
+
+    "pots":[
+        {"type":"Indoor Use","name":" Glossy Ceramic Pot","price":499,"isfavrouite":false,"rating":2.8,"image":"/assets/pics/Image 22.png"},
+    {"type":"Indoor Use","name":"Terracotta Pots (set of 3)","price":999,"isfavrouite":false,"rating":4.9,"image":"/assets/pics/image 19.png "},
+    {"type":"Balcony Garden","name":"Brown Clay Pot","price":299,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/image 21.png "},
+    {"type":" Outdoor friendly","name":"Hanging Plastic Pot","price":399,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/image 20.png "},
+    {"type":"Indoor Use","name":"Terracotta Pots (set of 3)","price":999,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/image 19.png "},
+    {"type":"Outdoor Use","name":"Metal green Watering Can","price":599,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/Image.png"},
+    {"type":"Outdoor friendly","name":"Hanging Plastic Pot","price":399,"isfavrouite":false,"rating":3.8,"image":"/assets/pics/image 20.png "},
+    {"type":"Balcony Garden","name":"Brown Clay Pot","price":299,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/image 21.png "},
+    {"type":"Outdoor friendly","name":"Hanging Plastic Pot","price":399,"isfavrouite":false,"rating":3.5,"image":"/assets/pics/image 20.png "},
+    {"type":"Balcony Garden","name":"Brown Clay Pot","price":299,"isfavrouite":false,"rating":4.8,"image":" /assets/pics/image 21.png "},
+    {"type":"Indoor Use","name":"Ocean Glossy Ceramic Pot","price":499,"isfavrouite":false,"rating":4.9,"image":"/assets/pics/Image 22.png"},
+    {"type":"Indoor Use","name":"Terracotta Pots (set of 3)","price":999,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/image 19.png "},
+    {"type":"Outdoor Use","name":"Metal green Watering Can","price":599,"isfavrouite":false,"rating":3.8,"image":" /assets/pics/Image.png"},
+    {"type":"Indoor Use ","name":"Terracotta Pots (set of 3)","price":999,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/image 19.png"},
+    {"type":"Indoor Use ","name":"Wooden Wall hanging planter","price":999,"isfavrouite":false,"rating":1.8,"image":"/assets/pics/image 22 (1).png "},
+    {"type":"Outdoor friendly","name":"Hanging Plastic Pot","price":399,"isfavrouite":false,"rating":4.8,"image":"/assets/pics/image 20.png "}
+    ]
+}

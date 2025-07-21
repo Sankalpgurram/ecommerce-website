@@ -1,0 +1,81 @@
+<app-navbar></app-navbar>
+<section>
+<div class="cart-box">
+<div class="cart-info">
+    <div class="head">
+        <div class="head1">
+            <div class="head2">
+                <p class="item">
+                    Item
+                </p>
+                <p class="size"> Size</p>
+                <p class="quantity">Quantity</p>
+                <p class="subtotal">Subtotal</p>
+            </div>
+        </div>
+        <p class="error" *ngIf="showerror">'Minimum 1 item required!!' </p>
+    </div>
+    <div class="product" *ngFor="let i of cartitems;let k=index ">
+        <div class="plant-info">
+            <button class="delete" (click)="removeitem(k)"  >
+              <img class="cross" src="/assets/pics/cross.png">
+            </button>
+            <div class="product-details"  >
+                <img class="plant" src="{{i.image}}">
+                <div class="plant-details">
+                    <p class="plant-name"> {{i.name}}</p>
+                    <button class="stock"> <p class="instock">In stock</p></button>
+                    <div class="date">
+                        <p class="delivery">
+                            Delivery between 10 Jun - 14 Jun
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <button class="pot-size"> <select class="dropdown" > 
+             <option *ngFor="let size of potsize" [value]="size" [selected]="size.size === i.selectedsize">{{size.size}}</option> <p class="p-size"></p></select> </button> 
+            
+             
+        <div class="btn1">
+            
+            <button (click)="decrease(k)" class="minus"> -</button>
+            <p id="text-btn"> {{i.quantity}}</p>
+            <button (click)="increase(k)"   class="add">+</button>
+            <p class="price"> ₹{{i.price*i.quantity}}</p>
+        </div>
+     
+    </div>
+
+</div>
+<div class="price-box" >
+    <div class="price-details">
+        <div class="price-head">
+            <p class="price-text"> Price Details </p>
+        </div>
+        <div class="price-card" >
+            <div class="price-list" *ngFor="let i of cartitems " >
+                <p class="amt-text">{{i.name}}</p>
+                <p class="amt-text2">₹{{i.price*i.quantity}}</p>
+                
+            </div>
+             
+                 
+        </div>
+        <div class="total-amt" >
+            <p class="total-amount"> Total Items </p>
+            
+            <p class="total-price">{{totalitems()}} </p>
+        </div>
+        <div class="total-amt" >
+            <p class="total-amount"> Total Amount</p>
+            <p class="total-price">₹{{gettotal()}} </p>
+        </div>
+        <button class="placeorder"(click)="addtoOrders()" [routerLink]="['/checkout']" [disabled]="cartitems.length === 0">Place Order </button>
+    </div>
+</div>
+
+</div>
+
+ </section>
+  

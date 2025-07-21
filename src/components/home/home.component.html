@@ -1,0 +1,34 @@
+<section>
+    <div class="home">
+        <div class="search">
+            <div class="search-container" id="search-container">
+                <div class="btn">
+                    <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                        alt="image" (click)="moveImage()" (click)="movetext()">
+                </div>
+
+                <input type="text" placeholder="plants, seeds, fertilizers...." name="search" id="search-container"
+                    style="border:none; color:#828282B2;background-color: transparent;" [(ngModel)]="search"
+                    [class.shift]="isshift " (click)="movetext()" (click)="moveImage()" [readOnly]="!ismoved">
+
+            </div>
+
+
+        </div>
+        <div class="plant">
+            <p style="font-size: 40px;"> Where every plant is a promise of <b>Growth </b> </p>
+        </div>
+        <div class="text">
+            Explore our collection of plants nurtures from India’s best nursery.
+        </div>
+
+        <div>
+            <button class="shop" type="submit" [routerLink]="['/plants']">Shop Now</button>
+        </div>
+
+    </div>
+    <div class="img">
+        <img class="image" src="assets/pics/Nature.jpg" alt="cart">
+
+    </div>
+</section>

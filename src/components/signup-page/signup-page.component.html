@@ -1,0 +1,69 @@
+<section>
+    <div class="plant-img">
+        <img class="cactus" src=" /assets/pics/cactus.png">
+    </div>
+    <div class="image2">
+        <img class="footer" src="/assets/pics/Vector 26.png">
+    </div>
+
+    <div class="signup">
+        <form class="login-form" (ngSubmit)="onsignup(signupForm)" #signupForm="ngForm">
+            <div class="signup-box">
+                <p class="header">
+                    Create Account
+                </p>
+                <div class="details-box">
+                    <div class="details">
+                        <div class="name">
+                            <p class="user"> Username </p>
+                            <input type="text" id="username" name="username" [(ngModel)]="signup.username" required placeholder="Enter Username" (click)="hide()">
+                        </div>
+                        <p class="error" *ngIf="showerror"> Username already Exists!</p>
+
+                        <div class="box2">
+                            <div class="left">
+                                <p class="user"> Email </p>
+                                <input type="text" id="email" name="username" [(ngModel)]="signup.email" required  placeholder="Enter your Email ID">
+                            </div>
+                            <div class="right">
+                                <p class="user"> Phone Number </p>
+                                <input type="text" id="phone" name="username" [(ngModel)]="signup.phone" required  placeholder="+91">
+
+                            </div>
+                        </div>
+
+                        <div class="password">
+                            <p class="user"> Password </p>
+                            <input type="text" id="passcode" name="username" [(ngModel)]="signup.password" required  placeholder="Create Your Password">
+                        </div>
+                    </div>
+
+                    <button  type="submit" [disabled]="!signupForm.valid" class="signup-btn">
+                        Sign up
+                    </button>
+                </div>
+
+                <div class="options-box">
+                    <div class="box3">
+                        <div class="line"> </div>
+                        <p class="or"> OR</p>
+                        <div class="line"> </div>
+                    </div>
+
+                    <div class="sign-in">
+                    <div class="header2"> <p class="login" [routerLink]="['/login']" >
+                            Sign In
+                        </p> </div> 
+                        <div class="signin-buttons" >
+                            <button type="button" class="btn-1"(click)="$event.stopPropagation()" ><img class=google src="/assets/pics/google.png" (click)="$event.stopPropagation()"></button>
+                            <button type="button"class="btn-1"(click)="$event.stopPropagation()"><img class=google src="/assets/pics/facebook.png" (click)="$event.stopPropagation()"></button>
+                            <button type="button"class="btn-1"(click)="$event.stopPropagation()"><img class=google src="/assets/pics/Vector copy.png" (click)="$event.stopPropagation()"></button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</section>

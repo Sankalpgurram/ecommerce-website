@@ -1,0 +1,195 @@
+<app-navbar></app-navbar>
+<section>
+
+    <div class="card">
+        <div class=" left">
+            <img class="plant-pic" src="{{plants.image}}">
+        </div>
+        <div class="right">
+            <div class="right-info">
+                <div class="info1">
+                    <p class="info2"> {{plants.type}} </p>
+                    <p class="info3"> {{plants.name}} <button class="stock">
+                            <p class="plant-stock">{{plants.button}}</p>
+                        </button></p>
+                    <p class="info4"> <img class="star" src="{{plants.star}}"> {{plants.rate}}</p>
+                    <p class="info5">₹ {{plants.price}}</p>
+                </div>
+                <div class="right-down">
+                    <p class="para1"> {{plants.description}}</p>
+
+                    <div class="plant-size">
+                        <p class="para2"> Plant Size</p>
+                        <div class=" pot-type">
+                            <div class="potsize" *ngFor="let size of potsize"
+                                [ngStyle]="{'background': size.background}" (click)="changesize(size.id)">
+                                <p class="size">{{size.id}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="material">
+                        <p class="para3"> Pot Material</p>
+                        <div class="material-type">
+                            <button class="btn-material" *ngFor=" let i of potmaterial"
+                                [ngStyle]="{'background': i.background}"
+                                (click)="changematerial(i.id)">{{i.id}}</button>
+
+                        </div>
+                    </div>
+
+                    <div class="color">
+                        <p class="para4"> Pot Color</p>
+                        <div *ngFor="let color of potColors" class="{{ color.classBorder }}"
+                            [ngStyle]="{'border': color.border}" (click)="changeBorder(color.id)">
+                            <div class="{{ color.classColor }}"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="action-btn">
+                        <div class="btn1">
+                            <button (click)="decrease()" class="minus">- </button>
+                            <p id="text-btn"> {{count}}</p>
+                            <button (click)="increase()" class="add">+</button>
+                        </div>
+                        <button class="btn2" (click)="addtocart(plants)">Add to cart</button>
+                        <button class="btn3"> Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="description area-height">
+
+    <div class="description-box">
+        <div class="description-heading">
+            <div class="description-headers">
+                <p class="head1" (click)="setActiveTab('description')">Description
+
+                </p>
+
+                <p class="head2" (click)="setActiveTab('additional')">Additional Information</p>
+                <p class="head3" (click)="setActiveTab('review')"> Review</p>
+                <img class="line" src="/assets/pics/Rectangle 13.png">
+            </div>
+        </div>
+        <div class="info-box">
+            <div class="description-input" *ngIf="activeTab === 'description'" [innerHTML]="description.info">
+                {{description.info}}
+                <!-- {{description.content}} -->
+
+            </div>
+            <div class="additional-info" *ngIf="activeTab ==='additional'">
+                <div class="information-box">
+                    <div class="attribute">
+                        <div class="attribute-head">
+
+                            <p class="header1"> Attribute</p>
+                            <p class="header2">Description </p>
+                        </div>
+                    </div>
+                    <div class="header3" *ngFor="let i of info">
+                        <p class="data-1">{{i.attribute}}</p>
+                        <p class="data-2"> {{i.description}} </p>
+                    </div>
+                    <!-- <div class="header3"> 
+                        <p class="data1">Watering Needs</p>
+                        <p class="data2">  Moderate (Once every 2-3 days. Keep soil slightly moist, not soggy) </p>
+                     </div>
+                     <div class="header3"> 
+                        <p class="data1"> Light Requirements</p>
+                        <p class="data2">  Indirect Sunlight (Thrives in bright, indirect light. Avoid direct sunlight-it can burn the leaves)</p>
+                     </div> -->
+                </div>
+
+            </div>
+
+            <div class="review-info" *ngIf="activeTab === 'review'">
+                <div class="rating">
+                    <div class="rating-box">
+                        <div class="rating-box1">
+                            <p class="content1">
+                                <span class="totalreview"> Total Reviews</span> <br><span
+                                    class="avgrate">{{description.review}}</span> <br>
+                                Growth
+                                in this year
+                            </p>
+                        </div>
+                        <div class="rating-box2" *ngFor="let i of feedback ">
+                            <p class="content2">
+                                <span class="totalreview"> Average Rating</span> <br><span class="avgrate">{{i.avgrate}}
+                                </span>
+                                (out of 5)
+                            </p>
+                            <div class="stars">
+                                <img *ngFor="let j of i.stars" class="star-icon" src="{{i.url}}">
+
+                            </div>
+
+                        </div>
+                        <div class="rating-box3">
+                            <div class="fivestar" *ngFor="let i of rating ">
+                                <p class="rating-no"> {{i.star}}</p>
+                                <div class="rating-level">
+
+                                    <div class="rating-percent" [ngStyle]="{'width': i.width }">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="review-footer">
+                    <p class="review-list">Review List</p>
+
+                </div>
+                <div class="reviewlist-info" *ngFor="let i of review ">
+                    <div class="data1">
+                        <div class="data2">
+                            <div class="review-list-head">
+                                <div class="profile">
+                                    <img class="dp" src="{{i.link}}">
+                                    <p class="person-name"> {{i.name}}</p>
+                                </div>
+                                <p class="side-tag"> {{i.date}}</p>
+
+                            </div>
+                            <div class="user-review">
+                                <p class="user-review1">
+                                    {{i.review1}}
+                                    <span class="review2"> {{i.review2}} </span>
+                                </p>
+                                <div class="stars2">
+                                    <img *ngFor="let j of i.stars" class="star-icon2" src="{{i.url}}">
+
+                                </div>
+                            </div>
+                            @if(i.pics ){
+                            <div class="review-image">
+                                <img *ngFor="let k of i.pics" class="image1" src="{{k.plant}}">
+                            </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</section>
+
+<app-similar-products></app-similar-products>

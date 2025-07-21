@@ -1,0 +1,152 @@
+section {
+    width: 100%;
+    height: 394px;
+    gap: 10px;
+    padding: 40px;
+
+}
+
+.content-wrapper{
+    background-color: #E0F4EAF2;
+    border-radius: 32px;
+    border-width: 1px;
+}
+
+.content {
+    width: 1184px;
+    height: 313px;
+    gap: 10px;
+  
+   
+    padding: 40px;
+    /*background: url("/assets/pics/background.png");*/
+    
+    mix-blend-mode: multiply;
+    background-size: cover;
+    opacity: 0.9px;
+}
+
+
+.box {
+    width: 1116px;
+    height: 285px;
+    gap: 212px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    border-radius: 24px;
+
+    margin-top: -8px;
+    margin-left: -7px;
+
+}
+
+.textbox {
+    width: 402px;
+    height: 271px;
+
+    margin-left: 69px;
+    margin-top: -13px;
+}
+
+.text {
+    width: 400px;
+    height: 200px;
+    align-content: center;
+    margin-bottom: 101px;
+    margin-top: 1px;
+
+
+}
+
+.input {
+    text-align: center;
+}
+
+.offer {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    width: 602px;
+    height: 101px;
+    color: #002D3E;
+   
+    margin-left: -318px;
+        
+}
+
+.input {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #002D3E;
+}
+
+.btn {
+    margin-left: -125px;
+    background: #62E6A2;
+    width: 152px;
+    height: 44px;
+    gap: 8px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    border-radius: 48px;
+    border: none;
+    color: #002D3E;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.plant {
+    width: 481px;
+    height: 279px;
+    border-radius: 207px;
+    margin-left: 530px;
+    margin-top: -230px;
+    padding-top: 0px;
+    margin-bottom: 29px;
+    margin-left: 490px;
+}
+
+.tagline{
+font-family: Inter;
+font-weight: 400;
+font-size: 16px;
+line-height: 17%;
+letter-spacing: -2%;
+vertical-align: middle;
+color: #002D3E;
+width: 602px;
+height: 40px;
+text-align: left;
+margin-bottom: -8px;
+margin-left: -119px;
+}
+
+.info{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #197A48;
+    margin-left: -124px;
+
+}
+
+.btn:hover{
+    background: #002D3E;
+color:#62E6A2;
+
+}

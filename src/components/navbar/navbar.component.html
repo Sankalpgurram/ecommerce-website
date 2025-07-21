@@ -1,0 +1,69 @@
+<div class="nav">
+
+   <div class="logo"> <a href="#logo">Logo</a> </div>
+
+   <div class="button"> <a class="nav-buttons" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} >Home</a>
+      <div class="dropdown"> <button class="dropbtn"> <a class="nav-buttons" routerLink="/plants" routerLinkActive="active">Plants</a> </button>
+         <div class="dropdown-content">
+            <div class="drop-box">
+               <div class="drop-left">
+                  <img class="plant-pic" src="/assets/pics/plant44.png">
+                  <div class="left-text">
+                     <p class="offer">Seasonal Sale <br><span class=discount>30%</span><span class=off>OFF</span> </p>
+                     <button class="offer-btn"> Check Offers</button>
+                  </div>
+               </div>
+               <div class="drop-right">
+                  <div class="left">
+                     <p class="left-info"> Indoor<br> Outdoor<br> Fruit<br> Flowering<br> By Purpose</p>
+                  </div>
+                  <div class="right">
+                     <p class="right-info"> Herbs & Medicinal<br><br> Trees & Big Plants<br><br> Bonsai &
+                        Miniature<br><br> Succulents & Cacti<br><br> Seasonal Plants</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="nav-buttons" routerLinkActive="active" routerLink="/potspage">Pots and Accesories</a>
+      <a class="nav-buttons" routerLinkActive="active" routerLink="/seedspage"> Seeds</a>
+      <a class="nav-buttons"  routerLink="/aboutus" routerLinkActive="active"> About</a>
+      <a class="nav-buttons" routerLinkActive="active" routerLink="/blogpage"> Blogs</a>
+   </div>
+
+
+   <div class="icons">
+      <img src="assets/pics/Search.jpg" alt="searchbar" width="24px" height="22px">
+      <div class="cart-container" routerLink="/cart">
+         <img class="cart" src="assets/pics/Cart.jpg" alt="cart" width="24px" height="22px">
+         <span class="cart-badge" *ngIf="cartCount > 0">{{ cartCount }}</span>
+       </div>
+       
+      <div class="dropdown2"> <button class="dropbtn2"><img src="assets/pics/Profile.jpg" alt="profile" width="24px"
+               height="22px" style="cursor: pointer;"> </button>
+         <div class="drop-content2">
+            <div class="dropbox2">
+               <div class="leftbox">
+                  <img class="profile-pic">
+                  <div class="name-box">
+                     <p class="username">{{userdata.username}}</p>
+                     <div class="email">
+                        <p class="user-email">
+                           {{userdata.email}}
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="rightbox">
+              <div class="orders" *ngFor="let i of profile" [routerLink]="[i.link]">
+               <img class="order-pic" src="{{i.icon}}">
+               <p class="myorder" >{{i.name}}</p>
+               <img class="arrow" src="{{i.arrow}}">
+              </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </div>

@@ -1,0 +1,174 @@
+section{
+    width: 100%;
+    height: 600px;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 74px;
+  
+}
+
+.blog{
+ 
+    width: 1136px;
+    height: 507px;
+    gap: 16px;
+    margin-left: 20px;
+    margin-top: 8px;
+
+}
+
+.head{
+    width: 1200px;
+height: 38px;
+justify-content: space-between;
+ 
+}
+
+.head1{
+    width: 63px;
+height: 29px;
+ 
+}
+
+.para1{
+    font-family: Inter;
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: -2%;
+color:   #002D3E;
+margin-left: -31px;
+}
+
+.btn{
+    width: 116px;
+height: 38px;
+gap: 8px;
+padding-top: 10px;
+padding-right: 16px;
+padding-bottom: 10px;
+padding-left: 16px;
+border-radius: 48px;
+background-color:  #62E6A2;
+border: none;
+margin-top: -7px;
+margin-left: 20px;
+cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(105.35deg, #E7F7EF 4.94%, #BEEED5 90.7%);
+    box-shadow: 0px 0px 11.7px 0px #4D8C6B80;
+
+}
+.view{
+    padding-left: 1036px;
+    margin-top: -33px;
+     
+}
+
+.content{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
+    height: 420px;
+    gap: 22px;
+    padding-right: 0px;
+    padding-left: 0px;
+ 
+}
+
+.cards{
+    width: 386px;
+    height: 456px;
+    border-radius: 20px;
+    border-width: 1px;
+    background: #FFFFFF;
+    border: 1px solid #61636033;
+ 
+}
+
+.image{
+    width: 385px;
+    height: 298px;
+top: -3px;
+
+}
+
+.pic{
+    width: 386px;
+    height: 295px;
+    border-radius: 8px;
+    border-width: 1px;
+    border: 1px solid #F1F0F0;
+}
+
+.info{
+    width: 378px;
+height: 158px;
+gap: Spacing/XS;
+padding: 20px;
+
+}
+
+.text{
+    width: 390px;
+height: 92px;
+gap: 8px;
+
+}
+
+.textbox{
+    width: 390px;
+height: 48px;
+
+}
+
+.h1{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: #002D3E;
+    margin-left: -3px;
+    text-overflow: ellipsis;
+    width: 94%;
+    overflow-wrap: break-word;
+}
+
+.p2{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #616360;
+    margin-bottom: 11px;
+    margin-top: 8px;
+    margin-left: -1px;
+    text-overflow: ellipsis;
+    width: 96%;
+    overflow-wrap: break-word;
+
+}
+
+  
+
+ .read{
+    font-family: Inter;
+font-weight: 500;
+font-size: 12px;
+line-height: 150%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration: 0%;
+text-decoration-thickness: 0%;
+color:   #26AB66;
+
+ }

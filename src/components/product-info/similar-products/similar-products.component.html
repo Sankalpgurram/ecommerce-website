@@ -1,0 +1,43 @@
+<div class="head">
+    <div class="text">
+        Similar Products
+    </div>
+    <div class="view">
+        <button class="btn"[routerLink]="['/plants']"> View all Products</button>
+    </div>
+</div>
+
+
+<section>
+    
+    <div class="cards"  (click)="transferdata(card)" *ngFor="let card of topseller">
+
+        <div class="img">
+          
+         <img class="image" [src]="card.plants.image">
+         <div class="overlay">  
+             <button class="cart-btn" (click)="addtocart(card.plants,$event)"> Add to Cart</button>
+         </div>
+        </div>
+        <div class="content">
+         <div class="left">
+             <div class="head">
+              <p class="plant"> {{card.plants.type}}  </p>  
+             </div>
+             <div class="name">
+                 {{card.plants.name}}
+             </div>
+             <div class="amount">
+                 From <span class="amt">₹{{card.plants.price}} </span>
+             </div>
+         </div>
+         <div class="right">
+             <div class="like">
+             <img class="icon" src="{{card.plants.star}}" style="width:12px;height:12px;" >{{card.plants.rate}}
+         </div>
+         </div>
+ 
+        </div>
+     </div>
+
+</section>

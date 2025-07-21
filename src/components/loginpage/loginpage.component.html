@@ -1,0 +1,59 @@
+<section>
+  <div class="plant-img">
+    <img class="cactus" src=" /assets/pics/cactus.png">
+    <!-- <img class="footer" src="/assets/pics/Vector 26.png"> -->
+  </div>
+
+  <div class="loginpage">
+    <div class="login">
+      <div class="head">
+        <div class="header1">
+          <p class="head1"> Login</p>
+        </div>
+      </div>
+      <div class="user-details">
+        <form class="login-form" #loginForm="ngForm"  (ngSubmit)="onSubmit(loginForm)">
+         <p class="name"> Username </p>
+          <input type="text" id="username" name="username" placeholder="Enter User ID" [(ngModel)]="login.username" required (click)="hide()">
+          <p class="error" *ngIf="showerror"> User not found. Please sign up!</p>
+          <br> <br>
+
+          <p class="name">Password</p>
+          <input class="password" type="password" id="password" name="password" placeholder="Enter your Password"
+            required [(ngModel)]="login.password" (click)="hide()">
+            <p class="error" *ngIf="showDiv"> wrong password!</p>
+          <br> <br>
+          <button id="sign-in" type="submit" [disabled]="!loginForm.valid">Sign In</button>
+        </form>
+      </div>
+      <div class="sign-options">
+        <div class="bar">
+          <div class="line">
+
+          </div>
+          <p class="or"> OR</p>
+          <div class="line">
+
+          </div>
+        </div>
+        <div class="options">
+
+          <div class="signin-buttons">
+            <button class="btn-1" type="button"><img class=google src="/assets/pics/google.png"></button>
+            <button class="btn-1" type="button"><img class=google src="/assets/pics/facebook.png"></button>
+            <button class="btn-1" type="button"><img class=google src="/assets/pics/Vector copy.png"></button>
+          </div>
+
+          <p class="signup"> Don't have an account? <span class="sign" [routerLink]="['/sign-up']">Sign Up </span> </p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</section>

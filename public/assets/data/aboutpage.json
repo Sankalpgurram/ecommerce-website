@@ -1,0 +1,21 @@
+{
+    "needhelp":[
+
+        { "name":"Just Bought a Plant?","info":"Nice! Your seeds are in. Now let’s make sure they sprout strong.<br><span class='size'>Watering Tips:</span> Keep soil moist but not soaked. Use a spray bottle twice a day.<br><span class='size'>Sunlight Needs:</span> Place near indirect sunlight for 5-6 hours daily.<br><span class='size'>Soil Check:</span> Use soft, well-drained soil. Mix with coco peat for best results.  " },
+    { "name":"Planted Seeds?","info":"" },
+    { "name":" Watering Daily?" },
+    { "name":" Time to fertilize?"},
+    { "name":"  Ready to Harvest?" }
+
+    ],
+
+    "blogs":[
+    {"url":"/assets/pics/image 10.png ","info":"5 Easiest Plants to Grow at Home (And How to Keep Them Happy)" ,"text":"New to gardening? Start strong with these low-maintenance plants that thrive in Indian homes...","tag":"Read more..."},
+    {"url":" /assets/pics/image 12.png " ,"info":"Seed to Success: A Beginner’s Guide to Sowing Your First Crop","text":" Understand how to pick the right seeds, prep your soil, and give your crops the best start.","tag":"Read more..."},
+    {"url":" /assets/pics/f7419ee8ad7469c5850bd0420b0b06e3f2dfbf1e.png ","info":" Organic vs. Chemical Fertilizers: What Should You Use?  " ,"text":"Both have pros and cons. Learn which is better for your crop type, soil condition, and long-term ...","tag":"Read more..."}
+
+]
+
+
+
+}

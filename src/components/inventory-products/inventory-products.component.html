@@ -1,0 +1,173 @@
+<app-inventory></app-inventory>
+
+
+<section>
+    <div class="product-box">
+        <div class="details">
+            <div class="header1">
+                <div class="search-box">
+                    <div class="search-container" id="search-container">
+                        <div class="btn">
+                            <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                                alt="image" (click)="moveImage()" (click)="movetext()">
+                        </div>
+
+                        <input type="text" placeholder="plants, seeds, fertilizers...." name="search"
+                            id="search-container" style="border:none; color:#828282B2;background-color: transparent;"
+                            [(ngModel)]="search" [class.shift]="isshift " (click)="movetext()" (ngModelChange)="applySearch()" (click)="moveImage()"
+                            [readOnly]="!ismoved">
+
+                    </div>
+                    <img class="profile" src="assets/pics/Profile.jpg">
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="header2">
+                    <p class="text11"> Product Details</p>
+                    <div class="sort">
+                        <p class="sortby"> Sort by : </p>
+
+                        <div class="dropdown3">
+                            <button class="year" (click)="show()">
+                                <p class="amount"> {{selectedbtn}}</p>
+                                <img class="arrow" src="/assets/pics/drop.png">
+                            </button>
+                            <div class="drop-content3" *ngIf="showdata">
+                                <p class="clearall" (click)="clearSort()"> Clear All</p>
+                                <div class="sort-box">
+                                    <div class="upper-box">
+                                        <div class="order-id" *ngFor="let k of sort">
+                                            <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'"
+                                                [value]="k.value" [(ngModel)]="selectedbtn">
+                                            <label [for]="'radio-' + k.id" id="order"
+                                                name="order"> <p class="para"> {{k.name}} </p></label>
+
+                                        </div>
+                                    </div>
+                                    <div class="line2">
+
+                                    </div>
+                                    <div class="down-box">
+                                        <div class="ascending">
+                                            <img class="up-arrow" src="/assets/pics/up.png">
+                                            <p class="text4" (click)="sorting('asc')"> Ascending</p>
+                                        </div>
+                                        <div class="descending">
+                                            <img class="down-arrow" src="/assets/pics/down.png">
+                                            <p class="text5" (click)="sorting('dsc')"> Descending</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}"
+                                (click)="visible()" class="filter">
+                                Filter
+                            </button>
+                            <div class="drop-content2" *ngIf="showcontent">
+                                <div class="filter-box">
+                                    <div class="left">
+                                        <p class="clear" (click)="clearFilters()">Clear All</p>
+                                        <div class="left-order">
+                                            <div class="box13" *ngFor="let k of filter"
+                                                [ngStyle]="{'background': k.background}"
+                                                (click)="changecolor(k.name)">
+                                                <p class="order-name">
+                                                    {{k.name}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+
+                                </div>
+
+                                <div class="button-box">
+                                     
+
+                                    <button class="apply" (click)="applyFilter()" (click)="visible()">
+                                        <p class="text2">
+                                            Apply
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="plant-card">
+                    <div class="card" *ngFor="let k of displaydata">
+                        <div class="card-details">
+                            <div class="plant-details">
+                                <div class="plant-header">
+                                    <img class="pic" src="{{k.plants.image}}">
+                                    <div class="plant-header2">
+                                        <div class="plant-header3">
+                                            <p class="plant-type">{{k.plants.type}}</p>
+                                            <p class="name">{{k.plants.name}}</p>
+                                        </div>
+                                        <p class="price"> ₹ {{k.plants.price}}</p>
+                                    </div>
+                                </div>
+                                <p class="plant-info">
+                                    {{k.plants.description}}
+                                </p>
+                            </div>
+                            <div class="box2">
+                                <div class="sales-box">
+                                    <p class="sales">Sales</p>
+                                    <div class="para1">
+                                        <img class="arrow1" src="/assets/pics/Icon (10).png">
+                                        <p class="value">{{k.sales }}</p>
+                                    </div>
+                                </div>
+
+                                <div class="amount-box">
+
+                                    <p class="amount1">Amount </p>
+                                    <div class="para2">
+                                        <p class="value1">₹{{k.amount}}</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="review">
+                                    <p class="review-text">
+                                       Reviews
+                                    </p>
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <img class="star" src="{{k.plants.star}}">
+                                            <p class="feedback"> {{k.plants.rate}}</p>
+                                        </div>
+                                      
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="add-product" routerLink="/add-product"><img class="plus" src="/assets/pics/plus.png">
+            <p class="add">Add Product</p>
+        </button>
+
+        <!-- <div class="pagination">
+            <a class="number" (click)="gotopage(1)">1</a>
+            <a class="number" (click)="gotopage(2)">2</a> -->
+            <!-- <a class="number" (click)="gotopage(3)">3</a>
+            <a class="number" (click)="gotopage(4)">4</a>
+            <a class="number" (click)="gotopage(5)">5</a> -->
+            <!-- <button class="next" (click)="gotopage(currentpage + 1)" [disabled]="currentpage === totalpages">
+              <p class="btn-text">Next</p>
+            </button>
+          </div> -->
+
+    </div>
+</section>

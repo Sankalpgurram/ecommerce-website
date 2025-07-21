@@ -1,0 +1,98 @@
+<app-navbar></app-navbar>
+<section>
+    
+
+    <div class="box">
+        <div class="box1">
+            <div class="header1">
+                <div class="search-box">
+                    <div class="search-container" id="search-container">
+                        <div class="btn">
+                            <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                                alt="image" (click)="moveImage()" (click)="movetext()">
+                        </div>
+
+                        <input type="text" placeholder="plants, seeds, fertilizers...." name="search"
+                            id="search-container" style="border:none; color:#828282B2;background-color: transparent;"
+                            [(ngModel)]="search" [class.shift]="isshift " (click)="movetext()" (click)="moveImage()"
+                            [readOnly]="!ismoved">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="myorders-box">
+
+                <div class="header-box">
+                    <p class="order"> My Orders</p>
+
+                    <div class="sort">
+                        <p class="sortby"> Sort by : </p>
+                        <select class="year">
+                            <option> Past 1 Year</option>
+                            <option> newer</option>
+                            <option> Older</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="details-box">
+            <div class="plant-box" *ngFor="let i of cartitems">
+
+                <div class="plant-details">
+                    <div class="date">
+                        Delivered May 8
+                    </div>
+
+                    <div class="order-details">
+                        <img class="img" src="{{i.image}}">
+                        <div class="box3">
+                            <div class="box4">
+                                <div class="plant-name">
+                                    <p class="name">{{i.name}}</p>
+                                </div>
+
+                                <p class="price"> Total Amount :<span class="amt">₹{{i.price*i.quantity}}</span></p>
+                                <p class="quantity">Qty: <span class="qty">{{i.quantity}} items</span></p>
+                                <p class="category">Category: <span class="type">{{i.type}}</span></p>
+                                <p class="info">Return or Exchange items are eligible by May 20, 2025</p>
+                            </div>
+
+                            <div class="box5">
+                                <div class="left">
+                                    <p class="order-id"> Order ID</p>
+                                    <p class="order-id"> Order Date</p>
+                                    <p class="order-id"> Shipping Address</p>
+                                </div>
+                                <div class="right">
+                                    <p class="order-date"><span class="colon">:</span>#25610234901</p>
+                                    <p class="order-date1"><span class="colon">:</span>May 5, 2025</p>
+                                    <p class="address"><span class="colon">:</span>Dhanori, Pune, Maharashtra</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="invoice">
+                            <p class="view">View Invoice</p>
+                        </button>
+                    </div>
+                    <div class="buttons">
+                        <button class="exchange">
+                            <p class="para1">Exchange </p>
+                        </button>
+                        <button class="return">
+                            <p class="para2"> Return </p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>

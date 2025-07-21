@@ -1,0 +1,278 @@
+section{
+    background: linear-gradient(0deg, #F1FEF1 0%, #F6F8F6 100%);
+    width: 100%;
+    height: 690px;
+    display: flex;
+}
+
+.cactus{
+    width: 554px;
+    height: 636px;
+    top: 140px;
+    left: 101px;
+    margin-top: 42px;
+    margin-left: 24px;
+}
+
+.loginpage{
+    width: 507px;
+    height: 477px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 24px;
+    border-width: 1px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 5.2px 0px #CCCBCD;
+    margin-left: 694px;
+    margin-top: 96px;
+    position: absolute;
+    z-index: 10000;
+
+
+}
+
+.login{
+    width: 500px;
+    height: 469px;
+    gap: 36px;
+    margin-left: -57px;
+    margin-top: -80px;
+
+}
+
+.head{
+    width: 627px;
+height: 29px;
+
+}
+
+.head1{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #002D3E;
+    margin-top: 117px;
+    margin-left: -10px;
+}
+
+#password{
+    width: 377px;
+height: 42px;
+gap: 10px;
+border-radius: 16px;
+border-width: 1px;
+padding: 20px;
+background: #FFFFFF;
+border: 1px solid #D4D5D6;
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 12px;
+margin-top: 3px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+#username{
+    width: 377px;
+height: 42px;
+gap: 10px;
+border-radius: 16px;
+border-width: 1px;
+padding: 20px;
+background: #FFFFFF;
+border: 1px solid #D4D5D6;
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 12px;
+margin-top: 3px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color:#B7B8B9;
+}
+
+#sign-in{
+    width: 377px;
+height: 42px;
+gap: 5px;
+padding-top: 10px;
+padding-right: 16px;
+padding-bottom: 10px;
+padding-left: 16px;
+border-radius: 38px;
+background: #62E6A2;
+border: none;
+cursor: pointer;
+color: #002D3E;
+font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+ 
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+}
+
+
+.login-form{
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.footer{
+    margin-top: -105px;
+    width: 100%;
+}
+
+.plant-img{
+  
+    height: 600px;
+}
+
+.header1{
+   
+}
+
+.sign-options{
+    width: 304px;
+    height: 110px;
+    gap: 36px;
+    margin-left: 300px;
+    margin-top: 36px;
+
+}
+
+.bar{
+    width: 304px;
+    height: 12px;
+    border-width: 1px;
+    display: flex;
+    margin-left: -137px;
+    gap: 7px;
+}
+
+.options{
+    width: 151px;
+height: 62px;
+gap: 16px;
+
+}
+
+.signin-buttons{
+    width: 134px;
+    height: 34px;
+    gap: 16px;
+    margin-left: -57px;
+    margin-top: 24px;
+
+}
+
+.btn-1{
+    width: 34px;
+height: 34px;
+gap: 10px;
+border-radius: 16px;
+border-width: 1px;
+border: 1px solid #D9D9D9;
+background-color: transparent;
+margin-left: 10px;
+}
+
+.google{
+    width: 22px;
+height: 22px;
+
+}
+
+.signup {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #686A69;
+    width: max-content;
+    margin-left: -71px;
+    margin-top: 16px;
+}
+
+.sign{
+    font-family: Inter;
+font-weight: 600;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color:#26AB66;
+cursor: pointer;
+}
+
+
+#sign-in:hover{
+    background: #002D3E;
+    color: #62E6A2;
+
+}
+
+.name{
+    
+    font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #002D3E;
+
+
+}
+
+.line{
+    width: 136px;
+    height: 0px;
+    margin-top: 4px;
+    opacity: 1;
+    border-width: 1px;
+    top: 6.5px;
+    border: 1px solid #002D3E36;
+}
+
+.or{
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 11px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #002D3E;
+width: 14px;
+height: 12px;
+ 
+left: 144.29px;
+
+}
+
+.error{
+    color: red;
+    font-family: Inter;
+    font-size: 14px;
+
+}

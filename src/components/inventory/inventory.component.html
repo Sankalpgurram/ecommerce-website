@@ -1,0 +1,15 @@
+<section>
+    <div class="section-box">
+        <div class="logo-box">
+            <div class=" circle"> </div>
+
+            <p class="logo"> Logo</p>
+        </div>
+        <div class="buttons-box">
+            <div class="dashboard-box" *ngFor="let i of buttons" routerLinkActive="active"
+                [routerLinkActiveOptions]={exact:true} [routerLink]="[i.link]">
+                <img src="{{i.pic}}">       {{i.name}}  
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,87 @@
+section{
+    width: 263px;
+    height: 100vh;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(0deg, #F1FEF1 0%, #F6F8F6 100%);
+    position: fixed;
+}
+
+.section-box{
+    width: 256px;
+height: 663px;
+gap: 28px;
+
+}
+
+.logo-box{
+    width: 100px;
+height: 46px;
+gap: 5px;
+display: flex;
+}
+
+.circle{
+    width: 45px;
+height: 46px;
+border-radius: 50%;
+border: 2px solid #002D3E;
+background-color: white;
+}
+
+.logo{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #002D3E;
+    width: 46px;
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 1px;
+}
+
+.buttons-box{
+    width: 256px;
+height: 385px;
+margin-top: 22px;
+}
+
+.dashboard-box{ 
+    width: 227px;
+height: 55px;
+gap: 10px;
+border-radius: 16px;
+padding-left: 12px;
+cursor: pointer;
+font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 460%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #002D3E;
+    width: 216px;
+    height: 59px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   text-decoration: none;
+}
+
+.dashboard{
+    
+    
+}
+
+.dashboard-box:hover{
+    background-color: white;
+    color: green;
+    
+}
+
+.active{
+    background-color: #D2E8DF;
+}

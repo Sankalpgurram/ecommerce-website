@@ -1,0 +1,40 @@
+{
+    "header":[
+        {"name":"Customer Id"},
+        {"name":"Customers Name"},
+        {"name":"Total Orders"},
+        {"name":"Total Spend"},
+        {"name":"Signup Date"},
+        {"name":"View"}
+      
+      ],
+      
+      "customer":[
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 June,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 June,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 June,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"},
+        {"id":"#2834668","name":"Rohan Roy","img":"/assets/pics/boy.png","item":"28","spend":"3,248","date":"20 May,2025","more":"/assets/pics/eye.png"}
+      
+        
+      ]
+}

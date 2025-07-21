@@ -1,0 +1,281 @@
+<app-inventory></app-inventory>
+
+<section>
+    <div class="payment-box">
+        <div class="header1">
+            <div class="search-box">
+                <div class="search-container" id="search-container">
+                    <div class="btn">
+                        <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                            alt="image" (click)="moveImage()" (click)="movetext()">
+                    </div>
+
+                    <input type="text" placeholder="plants, seeds, fertilizers...." name="search" id="search-container"
+                        style="border:none; color:#828282B2;background-color: transparent;" [(ngModel)]="search"
+                        [class.shift]="isshift " (click)="movetext()" (click)="moveImage()" [readOnly]="!ismoved"
+                        (ngModelChange)="applySearch()">
+
+                </div>
+                <img class="profile" src="assets/pics/Profile.jpg">
+            </div>
+        </div>
+
+        <div class="payments">
+            <div class="customer-head">
+                <div class="head2">
+                    <p class="customer1"> Payments </p>
+                </div>
+
+                <div class="sort">
+                    <p class="sortby"> Sort by : </p>
+
+                    <div class="dropdown3">
+                        <button class="year" (click)="show()">
+                            <p class="amount"> {{selectedbtn}}</p>
+                            <img class="arrow" src="/assets/pics/drop.png">
+                        </button>
+                        <div class="drop-content3" *ngIf="showdata">
+                            <p class="clearall" (click)="clearSort()"> Clear All</p>
+                            <div class="sort-box">
+                                <div class="upper-box">
+                                    <div class="order-id" *ngFor="let k of sort">
+                                        <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'"
+                                            [value]="k.value" [(ngModel)]="selectedbtn">
+                                        <label [for]="'radio-' + k.id" id="order" name="order">
+                                            <p class="para"> {{k.name}} </p>
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="line2">
+
+                                </div>
+                                <div class="down-box">
+                                    <div class="ascending">
+                                        <img class="up-arrow" src="/assets/pics/up.png">
+                                        <p class="text4" (click)="sorting('asc')"> Ascending</p>
+                                    </div>
+                                    <div class="descending">
+                                        <img class="down-arrow" src="/assets/pics/down.png">
+                                        <p class="text5" (click)="sorting('dsc')"> Descending</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}" (click)="visible()"
+                            class="filter">
+                            Filter
+                        </button>
+                        <div class="drop-content2" *ngIf="showcontent">
+                            <div class="filter-box">
+                                <div class="left">
+                                    <div class="left-order">
+                                        <div class="box13" *ngFor="let k of filter"
+                                            [ngStyle]="{'background': k.background}" (click)="changecolor(k.name)" (click)="toggleDivs()">
+                                            <p class="order-name">
+                                                {{k.name}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                </div>
+                                <div class="right">
+                                    <p class="clear" (click)="clearFilters()">Clear All</p>
+                                    <div class="date" *ngIf="!showDivA">
+                                        <div class="date-picker">
+                                            <label for="id" class="end-date"> From</label>
+                                            <input type="date" id="calendar" [(ngModel)]="fromDate">
+                                        </div>
+
+                                        <div class="date-picker1">
+                                            <label for="id" class="to"> To</label>
+                                            <input type="date" id="calendar" [(ngModel)]="toDate">
+                                        </div>
+
+                                    </div>
+                                    <div class="payment-method"  *ngIf="showDivA" >
+                                        upi
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="button-box">
+                                <button class="close" (click)="visible()">
+                                    <p class="text1">
+                                        Close
+                                    </p>
+                                </button>
+
+                                <button class="apply" (click)="applyFilter()" (click)="visible()">
+                                    <p class="text2">
+                                        Apply
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="payment-details">
+                <div class="head4">
+                    <div class="box1">
+                        <p class="order"> Order ID</p>
+                    </div>
+
+                    <div class="box2">
+                        <p class="customer"> Customer Name</p>
+                    </div>
+
+                    <div class="box3">
+                        <p class="method"> Payment Method</p>
+                    </div>
+
+                    <p class="box4"> Amount Paid</p>
+
+                    <div class="time">
+                        <p class="date"> Date & Time</p>
+                    </div>
+
+                    <p class="status">
+                        Status
+                    </p>
+
+                    <p class="more">More</p>
+
+                </div>
+                <div *ngFor="let k of pageditems;let i=index;">
+                    <div class="list">
+                        <div class="main-content">
+                            <div class="box5">
+                                <p class="order-id1">{{k.id}}</p>
+                            </div>
+
+                            <div class="box6">
+                                <p class="name"> {{k.name}}</p>
+                            </div>
+
+                            <p class="upi">{{k.payment}}</p>
+
+                            <div class="box7">
+                                <p class="price">₹{{k.amount}}</p>
+                            </div>
+
+                            <div class="box8">
+                                <p class="calender"> {{k.date}} </p>
+                            </div>
+
+                            <div class="box9">
+
+                                <p class="complete"> Completed</p>
+
+                            </div>
+
+                            <div class="box10">
+
+                                <img class="eye" (click)="toggle(i)"
+                                    [src]="selecteditemindex === i ? nextImagesrc : '/assets/pics/eye.png'">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pay-box" *ngIf="selecteditemindex===i">
+                        <div class="details-box">
+                            <div class="box11">
+                                <div class="box12">
+                                    <p class="text11"> Payment Details </p>
+                                    <div class="box100">
+                                        <div class="left1">
+                                            <p class="total"> Product Total</p>
+                                            <p class="total"> Shipping Charges</p>
+                                            <p class="gst"> GST (included) </p>
+                                        </div>
+                                        <div class="right1">
+                                            <p class="charges"> :₹ {{k.totalMRP}}</p>
+                                            <p class="charges"> : ₹ {{k.shipping || 0}}</p>
+                                            <p class="tax"> : ₹ {{k.tax}}</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="box14">
+                                    <div class="final-amt">
+                                        <div class="left-box">
+                                            <p class="discount">
+                                                Discount
+                                            </p>
+                                            <p class="discount">
+                                                Final Paid Amount
+                                            </p>
+                                        </div>
+
+                                        <div class="right-box">
+                                            <p class="amt1">
+                                                : - ₹ 0.00
+                                            </p>
+                                            <p class="amt1">
+                                                : ₹ {{k.amount}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box15">
+                            <div class="content-box">
+
+                                <div class="invoice-box">
+                                    <p class="invoice-id"> Invoice ID : INV#203694</p>
+                                    <p class="refund"> Refund Status : Not Initiated</p>
+                                </div>
+
+                                <div class="line11">
+                                </div>
+
+                                <div class="shipping">
+                                    <p class="mode"> Shipping Mode</p>
+                                    <p class="ekart">Ekart Express</p>
+                                </div>
+
+                                <div class="line11">
+                                </div>
+
+                                <div class="contact">
+                                    <p class="customer-num"> Customer Contact</p>
+                                    <p class="phone"> +91 {{k.address.mobile}}</p>
+                                </div>
+
+                                <div class="line11">
+                                </div>
+
+                                <div class="order-box">
+                                    <p class="header3"> Order</p>
+                                    <p class="link">Link : www.xtrackxyhjchj.co.in</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-content">
+        <div class="pagination">
+            <div class="pagination">
+                <a *ngFor="let page of pageNumbers" class="number" [ngClass]="{ 'active': currentpage === page }"
+                    (click)="gotopage(page)">
+                    {{ page }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

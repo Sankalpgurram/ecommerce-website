@@ -1,0 +1,185 @@
+<section>
+    <div class="image">
+        <img class="plant" src="/assets/pics/confirm.png">
+    </div>
+    <div class="confirm-box">
+        <div class="box1">
+            <div class="confirmation">
+                <div class="box2">
+                    <img class="tick" src="/assets/pics/tick.png">
+                </div>
+                <div class="info">
+                    <p class="order-confirm"> Your order is Confirmed!</p>
+                    <p class="info2"> Thank you! We've received your order and are preparing it with care.
+                        We'll email you as soon as it ships.</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="status">
+                    <div class="circle1">
+
+                    </div>
+                    <div class="line1">
+
+                    </div>
+                    <div class="circle2">
+
+                    </div>
+                    <div class="line2">
+
+                    </div>
+                    <div class="circle3">
+                    </div>
+
+                </div>
+
+                <div class="box4">
+                    <div class="ordered">
+                        <p class="para1">
+                            Ordered
+                            <span class="date">
+                                ( on Jun 05 ) </span>
+                        </p>
+                    </div>
+
+                    <div class="ship">
+                        <p class="para2">
+                            Ready to ship
+                            <span class="progress">
+                                In progress </span>
+                        </p>
+
+                    </div>
+
+                    <p class="delivery">
+                        Expected Delivery
+                        <span class="delivery-date"> ( Jun 12 ) </span>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="view" [routerLink]="['/myorders']">
+            View Your Order
+        </button>
+
+    </div>
+
+
+
+</section>
+
+
+<!-- <div class="orders-box">
+    <div class="orders-content">
+        <p class="box-name">
+            Order Details
+        </p>
+        <div class="order-details" *ngFor="let i of displayorder" >
+            <div class="item-box">
+                <img class="plant-img" [src]="i.cart[0].image">
+                <div class="plant-details">
+                    <div class="plant-name">
+                        <p class="name"> {{i.cart[0].name}} </p>
+                    </div>
+                    <div class="plant-quantity">
+                        <div class="left">
+                            <p class="quantity">
+                                Quantity                     
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p class="text1">: {{i.cart[0].quantity}} </p>
+                        </div>
+                    </div>
+                    <div class="plant-size">
+                        <div class="left">
+                            <p class="quantity">
+                             Size                  
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p class="text1">: {{i.cart[0].selectedsize}} </p>
+                        </div>
+                    </div>
+
+                    <div class="plant-amount">
+                        <div class="left">
+                            <p class="quantity">
+                           Total Amount Paid               
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p class="text1">: ₹ 1,417 </p>
+                        </div>
+                    </div>
+
+                    <div class="plant-date">
+                        <div class="left">
+                            <p class="quantity">
+                                Expected delivery date            
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p class="text1">:12 June     </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="line4">
+
+            </div>
+            <div class="details-box">
+                <div class="order">
+                    <div class="left-box">
+                        <p class="quantity">
+                    Order ID             
+                        </p>
+                    </div>
+                    <div class="right-box">
+                        <p class="text1">:MH2035 </p>
+                    </div>
+                </div>
+
+                <div class="confirmation-box">
+                    <div class="left-box">
+                        <p class="quantity">
+                            Confirmation ID         
+                        </p>
+                    </div>
+                    <div class="right-box">
+                        <p class="text1">: 26053889 </p>
+                    </div>
+                </div>
+
+                <div class="payment">
+                    <div class="left-box">
+                        <p class="quantity">
+                            Payment Mode       
+                        </p>
+                    </div>
+                    <div class="right-box">
+                        <p class="text1">: {{i.payment}} </p>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="left-box">
+                        <p class="quantity">
+                            Delivery Address   
+                        </p>
+                    </div>
+                    <div class="right-box">
+                        <p class="text1">: {{i.address.address}},{{i.address.city}},{{i.address.pincode}},{{i.address.state}}  </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div> -->

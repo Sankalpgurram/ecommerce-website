@@ -1,0 +1,101 @@
+<app-inventory></app-inventory>
+
+<section>
+    <div class="banner-box">
+        <div class="header1">
+            <button class="circle" routerLink="/promotions"><img class="arrow"
+                    src="/assets/pics/Icon (11).png "></button>
+            <p class="para1">Promotions & Banners > Create Banner</p>
+        </div>
+        <form (ngSubmit)="onSubmit()" >
+            <div class-="banner-info">
+                <div class="header2">
+                    <p class="header3"> Create Banner</p>
+                </div>
+                <div class="details-box">
+                    <div class="left">
+                        <div class="box1">
+                            <label for="id" class="id"> Title</label>
+                            <input type="text" id="product-title" placeholder="Banner Name" name="name"
+                                [(ngModel)]="Banner.name">
+                        </div>
+
+                        <div class="box2">
+                            <div class="innerbox1">
+                                <label for="id" class="id"> Start Date</label>
+                                <input type="date" id="price" name="startdate" [(ngModel)]="Banner.startdate">
+                            </div>
+
+                            <div class="innerbox2">
+                                <label for="id" class="id"> End Date</label>
+                                <input type="date" id="sale-price" name="endDate" [(ngModel)]="Banner.endDate">
+                            </div>
+                        </div>
+
+
+
+                        <div class="box3">
+                            <div class="innerbox3">
+                                <label for="id" class="id"> Device Type</label>
+                                <input type="text" id="device" name="device" [(ngModel)]="Banner.type">
+                            </div>
+
+                            <div class="innerbox4">
+                                <label for="id" class="id"> Display Location</label>
+                                <input type="text" id="location" name="location" [(ngModel)]="Banner.location">
+                            </div>
+                        </div>
+
+
+                        <div class="box4">
+                            <div class="innerbox5">
+                                <label for="id" class="id"> Target URL</label>
+                                <input type="text" id="target" placeholder="Select Target" name="url"
+                                    [(ngModel)]="Banner.url">
+                            </div>
+
+                            <div class="innerbox6">
+                                <label for="id" class="id"> Status</label>
+                                <input type="text" id="status" placeholder="Schedule / Publish / Draft" name="status"
+                                    [(ngModel)]="Banner.status">
+                            </div>
+                        </div>
+
+                        <div class="box5">
+                            <label for="id" class="id"> Description</label>
+                            <input type="text" id="description" name="description" [(ngModel)]="Banner.description"
+                                placeholder="Your text here">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-box">
+                            <div class="image" *ngFor="let file of files">
+                                <p class="banner-image">Banner Image</p>
+                                <img class="deals-img" [src]="file.url">
+                                <button class="delete" (click)="removeFile(file,$event)">
+                                    <img class="bin" src="/assets/pics/icon (13).png">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="dragbox" appDrag (fileDropped)="filesDropped($event)"
+                        *ngIf="files.length < 1">
+                            <p id="target-drag">
+                                Drag & drop or <span class="browse" (click)="fileInput.click(); $event.stopPropagation()"> Browse </span>
+                                <span class="tagline"> (Maximum Size: 10 MB) </span>
+                            </p>
+                        </div>
+                        <input type="file" #fileInput style="display: none;" (change)="filesSelected($event)"
+                        accept="image/*" multiple>
+                    </div>
+
+                </div>
+            </div>
+            <button class="save" type="submit">
+                <p class=save-btn>Save Details</p>
+            </button>
+        </form>
+    </div>
+
+
+</section>

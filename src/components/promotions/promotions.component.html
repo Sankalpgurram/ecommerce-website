@@ -1,0 +1,130 @@
+<app-inventory></app-inventory>
+
+<section>
+    <div class="details-box">
+        <div class="box1">
+            <div class="header1">
+                <div class="search-box">
+                    <div class="search-container" id="search-container">
+                        <div class="btn">
+                            <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                                alt="image" (click)="moveImage()" (click)="movetext()">
+                        </div>
+
+                        <input type="text" placeholder="plants, seeds, fertilizers...." name="search"
+                            id="search-container" style="border:none; color:#828282B2;background-color: transparent;"
+                            [(ngModel)]="search" [class.shift]="isshift " (click)="movetext()" (click)="moveImage()"
+                            [readOnly]="!ismoved">
+
+                    </div>
+                    <img class="profile" src="assets/pics/Profile.jpg">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="customer-head">
+                    <div class="head2">
+                        <p class="customer1"> Promotions & banners </p>
+                        <div class="sort">
+                            <p class="sortby"> Sort by : </p>
+                            <select class="year">
+                                <option> Popularity
+                                <option>
+                                <option> newer</option>
+                                <option> Older</option>
+                            </select>
+
+                            <button class="filter">
+                                Filter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promotion-box">
+                    <div class="header-box">
+
+                        <div class="header3">
+                            <p class="banner">Banner Name</p>
+                        </div>
+
+                        <div class="header4">
+                            <p class="banner"> Display Location</p>
+                        </div>
+
+
+                        <div class="header5">
+                            <p class="banner"> Device</p>
+                        </div>
+
+                        <div class="header6">
+                            <p class="banner">Active Dates</p>
+                        </div>
+
+                        <div class="header7">
+                            Status
+                        </div>
+
+                        <div class="header8">
+                            Actions
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="promotion-info" *ngFor="let i of displaydata; let k = index">
+                        <div class="deal-box">
+                            <div class="deal-info">
+                                <img class="pic" src="{{i.image}}">
+                                <p class="green-deal"> {{i.name}}</p>
+                            </div>
+                        </div>
+
+                        <p class="location">
+                            {{i.location}}
+                        </p>
+
+                        <div class="header9">
+                            <p class="web">
+                                {{i.type}}
+                            </p>
+                        </div>
+
+                        <p class="date">
+                            {{i.startdate}}
+                        </p>
+
+                        <div class="status">
+                            <img class="green" src="{}">
+                            <p class="live">{{i.status}}</p>
+                        </div>
+
+
+                        <div class="actions">
+                            <img class="bin" (click)="removeitem(k)" src="/assets/pics/icon (13).png">
+                            <img class="pen" src="/assets/pics/pen.png">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <button class="add-product" routerLink="/add-banner"><img class="plus" src="/assets/pics/plus.png">
+            <p class="add">Create Banner</p>
+        </button>
+
+        <!-- <div class="pagination">
+            <a class="number" (click)="gotopage(1)">1</a>
+            <a class="number" (click)="gotopage(2)">2</a>
+            <button class="next" (click)="gotopage(currentpage + 1)" [disabled]="currentpage === totalpages">
+                <p class="btn-text">Next</p>
+            </button>
+        </div> -->
+
+    </div>
+</section>

@@ -1,0 +1,42 @@
+{
+    "header":[
+        {"name":"Order Id"},
+        {"name":"Customers Name"},
+        {"name":"Items bought"},
+        {"name":"Amount"},
+        {"name":"Date of Order"},
+        {"name":"Status"},
+        {"name":"View"}
+      
+      
+      ],
+      
+      "customer":[
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Shipped","more":"/assets/pics/eye.png","icon":"/assets/pics/shipped.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Cancelled","more":"/assets/pics/eye.png","icon":"/assets/pics/red.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"10, May 2025","status":"Returned","more":"/assets/pics/eye.png","icon":"/assets/pics/return.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"13, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Shipped","more":"/assets/pics/eye.png","icon":"/assets/pics/shipped.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"10,000","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Cancelled","more":"/assets/pics/eye.png","icon":"/assets/pics/red.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Returned","more":"/assets/pics/eye.png","icon":"/assets/pics/return.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"7,000","exchange":"3, May 2025","status":"Shipped","more":"/assets/pics/eye.png","icon":"/assets/pics/shipped.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Cancelled","more":"/assets/pics/eye.png","icon":"/assets/pics/red.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Returned","more":"/assets/pics/eye.png","icon":"/assets/pics/return.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"8,040","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"13, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"2,345","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"23, May 2025","status":"Shipped","more":"/assets/pics/eye.png","icon":"/assets/pics/shipped.png"},
+        {"id":"#2834668","name":"Rohit Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"3, May 2025","status":"Delivered","more":"/assets/pics/eye.png","icon":"/assets/pics/delivered.png"},
+        {"id":"#2834668","name":"Kunal Roy","img":"/assets/pics/boy.png","item":"28","return":"9,500","exchange":"23, May 2025","status":"Cancelled","more":"/assets/pics/eye.png","icon":"/assets/pics/red.png"},
+        {"id":"#2834668","name":"Rohan Roy","img":"/assets/pics/boy.png","item":"28","return":"10,000","exchange":"3, May 2025","status":"Returned","more":"/assets/pics/eye.png","icon":"/assets/pics/return.png"}
+      
+        
+      ]
+}

@@ -1,0 +1,98 @@
+<app-inventory></app-inventory>
+<section>
+
+    <div class=" box">
+        <div class="header1">
+            <div class="search-box">
+                <div class="search-container" id="search-container">
+                    <div class="btn">
+                        <img class="img-search" src="assets/pics/Frame .jpg" alt="profile" [class.move]="ismoved"
+                            alt="image" (click)="moveImage()" (click)="movetext()">
+                    </div>
+
+                    <input type="text" placeholder="plants, seeds, fertilizers...." name="search" id="search-container"
+                        style="border:none; color:#828282B2;background-color: transparent;" [(ngModel)]="search"
+                        [class.shift]="isshift " (click)="movetext()" (click)="moveImage()" [readOnly]="!ismoved">
+
+                </div>
+                <img class="profile" src="assets/pics/Profile.jpg">
+            </div>
+        </div>
+
+        <div class="dashboard-box">
+            <div class="box1">
+                <div class="head-box">
+                    <div class="head1">
+                        <p class="title"> Dashboard</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="graph">
+                        <!-- graph needed here  -->
+                         <div class="chart">
+                     <canvas id="MyChart"> {{chart}}</canvas>
+                    </div>
+                    </div>
+                    <div class="sale-details">
+                        <div class="box3">
+                            <div class="total-orders">
+                                <img class="plant" src="/assets/pics/d1.png">
+                                <div class="orders-box">
+                                    <p class="value1"> {{data.length}}</p>
+                                    <p class="value2"> Total Orders</p>
+                                </div>
+                            </div>
+                            <div class="total-orders">
+                                <img class="plant1" src="/assets/pics/visitors.png">
+                                <div class="orders-box">
+                                    <p class="value1"> {{displayusers.length}}</p>
+                                    <p class="value2"> Total Visitors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-customers">
+                            <img class="shopping" src="/assets/pics/shopping.png">
+                            <div class="box4">
+                                <p class="value3"> 1254</p>
+                                <p class="value4"> Total Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="orders">
+                    <div class="totalorder" *ngFor="let i of order" [ngStyle]="{'background': i.background }">
+                        <div class="box5">
+                            <p class="para1"> {{i.value}}</p>
+                            <p class="para2"> {{i.text}}</p>
+                        </div>
+                    </div>
+                </div>
+           
+
+            <div class="stock-box">
+                <div class="left">
+                    <p class="overview"> Stock Overview</p>
+                    <div class="sales-data">
+                        <div class="header2">
+                            <p class="product"> Product</p>
+                            <p class="quantity">Current Quantity</p>
+                            <p class="status"> Status</p>
+                        </div>
+                        <div class="data-box" *ngFor="let k of displaydata" >
+                            <div class="header3" >
+                                <p class="plant-name">{{k.plants.name}}</p>
+                                <p class="qty">{{k.quantity}}</p>
+                                <div class="para3"> {{k.status}}</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="right">
+                    <canvas id="canvas" >{{ chart }}</canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

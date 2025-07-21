@@ -1,0 +1,93 @@
+ 
+<section>
+    <div class="shop">
+        <div class="text">
+            Shop By Category
+        </div>
+
+        <div class="pics">
+            @if(category) {
+            <div *ngFor=" let i of category " [routerLink]="[i.link]">
+                <div class="img"> 
+                    <img class="plant-image" [src]="i.url"> </div>
+                <div class="plant">
+                    <p style="margin-top: 15px;"> {{i.name}} </p>
+                    
+                </div>
+
+            </div> }
+        </div>
+    </div>
+</section>
+
+
+<section class="plantcategory">
+    <div class="textbox">
+
+        <p class="h1"> Pots & Accesories</p> <br>
+        <div class="textbox2">
+            <p class="h2"> Showing {{displaypots.length}} out of {{displaypots.length}} results</p>
+            <div class="sort">
+                <p class="h3">Sort by:</p>
+                <div class="dropdown3">
+                    <button class="year" (click)="show()">
+                        <p class="amount"> {{selectedbtn}}</p>
+                        <img class="arrow" src="/assets/pics/drop.png">
+                    </button>
+                    <div class="drop-content3" *ngIf="showdata">
+                        <div class="sort-box">
+                            <div class="upper-box">
+                                <div class="order-id" *ngFor="let k of sort">
+                                    <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'" [value]="k.name"
+                                        [(ngModel)]="selectedbtn" (ngModelChange)="onSortChangeFromRadio(k.value)"
+                                        style="cursor: pointer;">
+                                    <label [for]="'radio-' + k.id" id="order" name="order"><p class="para">{{k.name}}</p></label>
+                                </div>
+                            </div>
+
+                            <p class="clear" (click)="clearSort()">Clear All</p>
+                        </div>
+
+                    </div>
+                </div>
+                  
+
+          
+                <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}" (click)="visible()"
+                    class="filter">
+                    Filter
+                </button>
+                <div class="drop-content2" *ngIf="showcontent">
+                    <div class="filter-box">
+                        <div class="left">
+                            <div class="left-order">
+                                <div class="box13" *ngFor="let k of filter"
+                                    [ngStyle]="{'background': selectedFilters.includes(k.name) ? '#9EFFCD' : 'transparent'}"
+                                    (click)="changecolor(k.name)">
+                                    <p class="order-name">
+                                        {{k.name}}
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="clear-btn" (click)="clearFilter()">Clear All</p>
+
+                    </div>
+                    <button class="apply" (click)="applyFilter()">
+                         Apply
+                    </button>
+
+                </div>
+            </div>
+              </div>
+              
+        </div>
+    </div>
+
+
+</section>
+
+<app-potscategory *ngIf="displaypots.length" [pots]="filteredpots.length ? filteredpots : displaypots" [filter]="filter"></app-potscategory>
+<app-discount></app-discount>

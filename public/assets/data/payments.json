@@ -1,0 +1,81 @@
+{
+   "payment" : [
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "Credit Card", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Failed", "img": "/assets/pics/red.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "COD", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "Wallet", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Failed", "img": "/assets/pics/red.png"
+        },
+    
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "complete", "img": "/assets/pics/delivered.png"
+        },
+    
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "COD", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Pending", "img": "/assets/pics/shipped.png"
+        },
+    
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "Credit Card", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Pending", "img": "/assets/pics/shipped.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "Wallet", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Failed", "img": "/assets/pics/red.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "COD", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        },
+    
+        {
+          "id": "#2834668", "name": "Rohit Roy", "payment": "UPI", "amount": "₹ 1032", "date": "1 May, 25 | 11:00 pm",
+          "status": "Complete", "img": "/assets/pics/delivered.png"
+        }
+    
+      ]
+
+
+}

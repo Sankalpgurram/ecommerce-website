@@ -1,0 +1,38 @@
+<section >
+    <div class="blog">
+        <div class="head">
+            <div class="head1">
+
+                <p class="para1"> Blogs</p>
+            </div>
+            <div class="view">
+                <button class="btn" [routerLink]="['/blogpage']"> View All Blogs</button>
+            </div>
+        </div>
+        <div class="content" >
+            <div class="cards" *ngFor="let card of blogs" >
+                <div class="image">
+                    <img class="pic" [src]="card.url">
+                </div>
+                <div class="info">
+                    <div content="text">
+                        <div class="textbox">
+                            <p class="h1">
+                                {{card.info}}
+                            </p>
+                        </div>
+                        <div class="textbox2">
+                        <p class="p2">
+                           {{card.text}}
+                        </p> 
+                    </div>
+                    </div>
+                    <div class="tag">
+                        <p class="read">{{card.tag}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <button (click)="sendMessage()">Send Message</button> -->
