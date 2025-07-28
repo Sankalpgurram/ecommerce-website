@@ -81,11 +81,11 @@ input:focus-visible {
 
 img {
     position: relative;
-    transition: transform 0.7s ease;
+    transition: transform 0.5s ease;
 }
 
 .move {
-    transform: translateX(376px);
+    transform: translateX(374px);
 
     animation-timing-function: ease-out;
     animation-duration: 300ms;
@@ -1089,3 +1089,9 @@ display: flex;
     width: 52px;
     cursor: pointer;
 }
+
+.active-sort {
+    background-color: #9EFFCD;
+    cursor: pointer;
+  }
+  

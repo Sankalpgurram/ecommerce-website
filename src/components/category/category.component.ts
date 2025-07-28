@@ -12,13 +12,13 @@ import { RouterModule } from '@angular/router';
 
 
 export class CategoryComponent {
-imagelist=[
-  {name:"Indoor Plants ",url:"assets/pics/Group 5.jpg"},
-  {name:"Outdoor Plants",url:"assets/pics/image.jpg" },
-  {name:"Pots and Accesories",url:"assets/pics/img.jpg" },
-  {name:"Gift & Combos",url:"assets/pics/plant.jpg" },
-  {name:"Seeds",url:"assets/pics/Group 7.jpg" }
-];
+// imagelist=[
+//   {name:"Indoor Plants ",url:"assets/pics/Group 5.jpg"},
+//   {name:"Outdoor Plants",url:"assets/pics/image.jpg" },
+//   {name:"Pots and Accesories",url:"assets/pics/img.jpg" },
+//   {name:"Gift & Combos",url:"assets/pics/plant.jpg" },
+//   {name:"Sesds",url:"assets/pics/Group 7.jpg" }
+// ];
 
 @Input() shopbycategory:any
 

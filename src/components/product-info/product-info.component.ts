@@ -33,7 +33,7 @@ setActiveTab(tabName: string) {
   id: any;
   data: any;
 
-  constructor(private dataservice: DataService, private cartservice: CartService, private route: ActivatedRoute) { }
+  constructor(private dataservice: DataService, private cartservice: CartService, private route: ActivatedRoute,private router: Router) { }
   ngOnInit(): void {
     // this.data = this.cartservice.getdata();
     let data = JSON.parse(localStorage.getItem('cart-details')||"{}");
@@ -207,6 +207,30 @@ setActiveTab(tabName: string) {
   selectedsize: string = '';
   selectedmaterial: string = '';
   selectedcolor: string = '';
+
+
+
+  buyNow(): void {
+    if (!this.plants) return;
+  
+    const productToBuy = {
+      name: this.plants.name,
+      type: this.plants.type,
+      price: this.plants.price,
+      quantity: this.count,
+      selectedsize: this.selectedsize,
+      selectedcolor: this.selectedcolor,
+      selectedmaterial: this.selectedmaterial
+       
+    };
+  
+    this.cartservice.clearCart();
+    this.cartservice.addtocart(productToBuy);
+    this.router.navigate(['/checkout']);
+  }
+  
+  
+
 
 }
 

@@ -75,7 +75,7 @@ input:focus-visible {
 
 img {
     position: relative;
-    transition: transform 0.7s ease;
+    transition: transform 0.5s ease;
 }
 
 .move {
@@ -358,6 +358,65 @@ margin-left: 13px;
     box-shadow: 0px 4px 4px 0px #0000001C;
     display: flex;
 
+}
+
+.totalorder2{
+    width: 175px;
+    height: 114px;
+    gap: 13px;
+    border-radius: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-width: 2px;
+    background: #FAF7F0;
+    border: 2px solid #FDFFFE;
+    box-shadow: 0px 4px 4px 0px #0000001C;
+    display: flex;
+
+}
+
+.totalorder3{
+    width: 175px;
+    height: 114px;
+    gap: 13px;
+    border-radius: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-width: 2px;
+    background: #F0F7FE;
+    border: 2px solid #FDFFFE;
+    box-shadow: 0px 4px 4px 0px #0000001C;
+    display: flex;
+}
+
+.totalorder4{
+    width: 175px;
+    height: 114px;
+    gap: 13px;
+    border-radius: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-width: 2px;
+    background: #EBF2EB;
+
+    border: 2px solid #FDFFFE;
+    box-shadow: 0px 4px 4px 0px #0000001C;
+    display: flex;
+}
+
+.totalorder5{
+    width: 175px;
+    height: 114px;
+    gap: 13px;
+    border-radius: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-width: 2px;
+    background: #FAF0EB;
+
+    border: 2px solid #FDFFFE;
+    box-shadow: 0px 4px 4px 0px #0000001C;
+    display: flex;
 }
 
 .box5{

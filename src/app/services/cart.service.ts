@@ -24,6 +24,29 @@ export class CartService {
     this.updateCartCount();
   }
 
+  // addtocart(product: any): string {
+  //   const existingItem = this.items.find(item => item.id === product.id);
+  
+  //   if (existingItem) {
+  //     const totalQty = existingItem.quantity + product.quantity;
+  
+  //     if (totalQty > product.plants.quantity) {
+  //       return 'Quantity exceeds available stock';
+  //     } else {
+  //       existingItem.quantity = totalQty;
+  //     }
+  //   } else {
+  //     if (product.quantity > product.plants.quantity) {
+  //       return 'Quantity exceeds available stock';
+  //     }
+  //     this.items.push(product);
+  //   }
+  
+  //   this.saveCart();
+  //   this.updateCartCount();
+  //   return 'Added successfully';
+  // }
+  
   getcartitems(): any[] {
     return this.items;
   }

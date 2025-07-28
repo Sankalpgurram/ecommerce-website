@@ -3,13 +3,14 @@ import { ChangeDetectorRef, Component, HostListener, OnInit } from '@angular/cor
 import { SeedcategoryComponent } from './seedcategory/seedcategory.component';
 import { DiscountComponent } from '../discount/discount.component';
 import { DataService } from '../../app/services/data.service';
-import { Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-seedpage',
-  imports: [CommonModule, SeedcategoryComponent, DiscountComponent, RouterLink ,FormsModule],
+  imports: [CommonModule, SeedcategoryComponent, DiscountComponent, RouterLink, FormsModule, FooterComponent],
   templateUrl: './seedpage.component.html',
   styleUrl: './seedpage.component.css'
 })
@@ -39,47 +40,53 @@ export class SeedpageComponent implements OnInit {
   category: any[] = [];
   seeds: any;
   data: any;
-  constructor(public dataservice: DataService) { }
+  constructor(public dataservice: DataService,private router:Router,private route:ActivatedRoute) { }
 
-  ngOnInit(): void {
-    this.dataservice.getdata().subscribe(
-      (data) => {
-        this.category = data.category;
-        this.retrieveData();
-           this.selectedbtn = 'Amount'
-      },
-    )
-  }
-
+  // ngOnInit(): void {
+  //   this.dataservice.getdata().subscribe((data) => {
+  //     this.category = data.category;
+  //     this.retrieveData();
+  
+  //     this.selectedbtn = 'Amount';
+ 
+  //   });
+  // }
   
 
 
-
-
-
+  selectedCategory: string = '';
+  ngOnInit(): void {
+   
+    this.route.queryParams.subscribe(params => {
+      const categoryParam = decodeURIComponent(params['category'] || '').trim().toLowerCase();
+      if (categoryParam) {
+        this.selectedCategory = categoryParam;
+      }
+    });
+  
+ 
+    this.dataservice.getdata().subscribe((data) => {
+      this.category = data.category;
+      this.retrieveData();
+      this.selectedbtn = 'Amount';
+    });
+  }
 
   displayseeds: any[] = [];
   retrieveData(): void {
     const seedsData = localStorage.getItem('seedsdata');
     if (seedsData) {
-      this.displayseeds = [...JSON.parse(seedsData)];
-
+      const parsedData = JSON.parse(seedsData);
+      this.originalSeeds = [...parsedData];
+      this.displayseeds = [...parsedData];
+      this.filteredseeds = []; 
     } else {
       this.displayseeds = [];
+      this.originalSeeds = [];
+      this.filteredseeds = [];  
     }
   }
-
-
-  // sortByPrice(order: string) {
-  //   if (order === 'lowToHigh') {
-  //     this.displayseeds = [...this.displayseeds.sort((a, b) => Number(a.price) - Number(b.price))];
-  //   } else if (order === 'highToLow') {
-  //     this.displayseeds = [...this.displayseeds.sort((a, b) => Number(b.price) - Number(a.price))];
-  //   }
-
-  // }
-
-
+  
 
   onSortChange(event: Event) {
     const value = (event.target as HTMLSelectElement).value;
@@ -93,6 +100,7 @@ export class SeedpageComponent implements OnInit {
   }
 
 
+  originalSeeds: any[] = [];  
 
 
 
@@ -148,31 +156,36 @@ export class SeedpageComponent implements OnInit {
     }
   
     sortByPrice(order: string) {
-      let list = this.filteredseeds.length ? this.filteredseeds : this.displayseeds;
+      const target = (this.filteredseeds && this.filteredseeds.length)
+      ? [...this.filteredseeds]
+      : [...this.displayseeds];
     
-      if (order === 'lowToHigh') {
-        list.sort((a:any, b:any) => Number(a.price) - Number(b.price));
-      } else if (order === 'highToLow') {
-        list.sort((a:any, b:any) => Number(b.price) - Number(a.price));
-      } else if (order === 'topRated') {
-        list.sort((a: any, b: any) => Number(b.rating || 0) - Number(a.rating || 0));
-  
-      }
     
-      if (this.filteredseeds.length) {
-        this.filteredseeds = [...list];
+      const sorted = [...target].sort((a, b) => {
+        if (order === 'lowToHigh') return +a.price - +b.price;
+        if (order === 'highToLow') return +b.price - +a.price;
+        if (order === 'topRated') return +b.rating - +a.rating;
+        return 0;
+      });
+    
+      if (this.filteredseeds && this.filteredseeds.length) {
+        this.filteredseeds = sorted;
       } else {
-        this.displayseeds = [...list];
+        this.displayseeds = sorted;
       }
+      
     }
+    
+    
   
     clearSort() {
       this.selectedbtn = 'Amount';
-  
-      this.displayseeds = JSON.parse(localStorage.getItem('seedsdata') || '[]');
+    
+   
+      this.displayseeds = [...this.originalSeeds];
       this.filteredseeds = [];
     }
-  
+    
   
   
     applyFilter() {
@@ -188,7 +201,6 @@ export class SeedpageComponent implements OnInit {
     }
     
         
-        
         clearFilter() {
           this.selectedFilters = [];
           this.filteredseeds = [];
@@ -196,7 +208,27 @@ export class SeedpageComponent implements OnInit {
           this.color = false;
         }
   
-
+ onCategoryClick(categoryItem: any) {
+          const trimmedName = categoryItem.name.trim().toLowerCase();
+        
+          if (trimmedName === 'pots and accesories') {
+            this.router.navigate(['/potspage'], {
+              queryParams: { category: categoryItem.name.trim() }
+            });
+          } else if (trimmedName === 'indoor plants' || trimmedName === 'outdoor plants') {
+            this.router.navigate(['/plants'], {
+              queryParams: { category: categoryItem.name.trim() }
+            });
+          } else if (trimmedName === 'gift & combos') {
+            this.router.navigate(['/potspage'], {
+              queryParams: { category: categoryItem.name.trim() }
+            });
+          } else if (trimmedName === 'seeds') {
+            this.router.navigate(['/seedspage'], {
+              queryParams: { category: categoryItem.name.trim() }
+            });
+          }
+        }
 
 
 }

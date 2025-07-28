@@ -20,6 +20,10 @@ export class PotscategoryComponent implements OnInit, OnChanges
 
   ngOnInit(): void {
     this.updatePagination();
+    const savedLikes = localStorage.getItem('likedpots');
+    if (savedLikes) {
+      this.likedItems = new Set<number>(JSON.parse(savedLikes));
+    }
   }
 
 
@@ -76,8 +80,6 @@ export class PotscategoryComponent implements OnInit, OnChanges
 
 
 
-
-
   paginateitems(): void {
     
     const startindex = (this.currentpage - 1) * this.itemsperpage;
@@ -94,8 +96,20 @@ export class PotscategoryComponent implements OnInit, OnChanges
     }
   }
 
+  
+  likedItems = new Set<number>();
 
 
+  toggle(index: number, event?: any): void {
+    event?.stopPropagation();
+    if (this.likedItems.has(index)) {
+      this.likedItems.delete(index);  
+    } else {
+      this.likedItems.add(index);  
+    }
+    localStorage.setItem('likedpots', JSON.stringify(Array.from(this.likedItems)));
+  }
+  nextImagesrc:string = '/assets/pics/like.png';
 
 
 }

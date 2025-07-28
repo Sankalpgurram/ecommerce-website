@@ -26,14 +26,14 @@
                 <div class="header-box">
                     <p class="order"> My Orders</p>
 
-                    <div class="sort">
+                    <!-- <div class="sort">
                         <p class="sortby"> Sort by : </p>
                         <select class="year">
                             <option> Past 1 Year</option>
                             <option> newer</option>
                             <option> Older</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -71,8 +71,8 @@
                                 </div>
                                 <div class="right">
                                     <p class="order-date"><span class="colon">:</span>#25610234901</p>
-                                    <p class="order-date1"><span class="colon">:</span>May 5, 2025</p>
-                                    <p class="address"><span class="colon">:</span>Dhanori, Pune, Maharashtra</p>
+                                    <p class="order-date1"><span class="colon">:</span>{{this.orderDate}}</p>
+                                    <p class="address"><span class="colon">:</span>{{ address.city }},{{ address.state }} -{{ address.pincode }}</p>
                                 </div>
                             </div>
 

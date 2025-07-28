@@ -7,9 +7,11 @@ import { DataService } from '../../app/services/data.service';
 import { Router, RouterLink } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from '../footer/footer.component';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-plants',
-  imports: [CommonModule,PlantCategoryComponent,DiscountComponent,RouterLink,NavbarComponent,FormsModule],
+  imports: [CommonModule,PlantCategoryComponent,DiscountComponent,RouterLink,NavbarComponent,FormsModule,FooterComponent],
   templateUrl: './plants.component.html',
   styleUrl: './plants.component.css'
 })
@@ -40,21 +42,24 @@ data: any;
 plants: any;
 filteredplants: any; 
  
-  constructor(public dataservice:DataService,private router:Router) {}
+  constructor(public dataservice:DataService,private router:Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-      this.dataservice.fetchData().subscribe(
-        (data) => {
-          this.data=data.category;
-          
-          this.retrievedata();
-          this.selectedbtn = 'Amount'
-      
-        },
-
-      );
+    this.dataservice.fetchData().subscribe((data) => {
+      this.data = data.category;
+      this.retrievedata();
+      this.selectedbtn = 'Amount';
+  
+      this.route.queryParams.subscribe(params => {
+        const category = params['category'];
+        if (category) {
+          this.selectedCategory = category;  
+          this.filterByCategory(category, true);   
+        }
+      });
+    });
   }
-   
+  
 
 
   showdata: boolean = false;
@@ -154,6 +159,7 @@ filteredplants: any;
       this.filteredplants = [];
       this.showcontent = false;
       this.color = false;
+      this.selectedCategory = '';
     }
 
   onSortChange(event: Event) {
@@ -162,21 +168,65 @@ filteredplants: any;
   }
 
 
-  filterByCategory(category: string) {
-    this.filteredplants = this.displayplants.filter((plant: any) => 
-      plant.plants.type.trim().toLowerCase() === category.trim().toLowerCase()
+  filterByCategory(value: string, triggerFromCard: boolean = false) {
+    this.selectedCategory = value;
+  
+    if (!this.selectedFilters.includes(value)) {
+      this.selectedFilters = [value];
+    }
+  
+    this.filteredplants = this.displayplants.filter((plant: any) =>
+      plant.plants?.type?.trim().toLowerCase() === value.trim().toLowerCase()
     );
+  
+ 
+    if (!triggerFromCard) {
+      this.showcontent = true;
+      this.color = true;
+    }
   }
   
   
-  handleCategoryClick(category: any) {
-    if (category.type === 'plant') {
-      this.filterByCategory(category.name);
-    } else if (category.type === 'route') {
-      this.router.navigate([category.link]);
+  
+  filterby(value: string) {
+    const index = this.selectedFilters.indexOf(value);
+  
+    if (index > -1) {
+      this.selectedFilters.splice(index, 1);
+      if (this.selectedCategory === value) {
+        this.selectedCategory = '';
+      }
+    } else {
+      this.selectedFilters.push(value);
+      this.selectedCategory = value;
     }
+  
+    this.filteredplants = this.displayplants.filter((plant: any) =>
+      this.selectedFilters.includes(plant.plants?.type)
+    );
+  
+    this.showcontent = this.filteredplants.length > 0;
+    this.color = true;
+  }
+  
+  
 
-} 
+selectedCategory: string = '';
+
+handleCategoryClick(category: any) {
+  this.selectedCategory = category.name; 
+
+  if (category.type === 'plant') {
+    this.router.navigate(['/plants'], { queryParams: { category: category.name } });
+     
+  }
+  
+   else if (category.type === 'route') {
+    this.router.navigate([category.link]);
+  }
+}
+
+
 
 displayplants: any[]=[];
 retrievedata(): void {

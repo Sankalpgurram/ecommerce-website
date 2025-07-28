@@ -22,6 +22,10 @@ export class PlantCategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.updatePagination();
+    const savedLikes = localStorage.getItem('likedplants');
+    if (savedLikes) {
+      this.likedItems = new Set<number>(JSON.parse(savedLikes));
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -103,11 +107,19 @@ export class PlantCategoryComponent implements OnInit {
     }
   }
 
-  selecteditemindex: number | null = null;
+  // selecteditemindex: number | null = null;
+  likedItems = new Set<number>();
 
-  toggle(index:number,event?:any): void {
+
+  toggle(index: number, event?: any): void {
     event?.stopPropagation();
-    this.selecteditemindex = this.selecteditemindex === index ? null : index;
+    if (this.likedItems.has(index)) {
+      this.likedItems.delete(index);  
+    } else {
+      this.likedItems.add(index);  
+    }
+    localStorage.setItem('likedplants', JSON.stringify(Array.from(this.likedItems)));
   }
+  
   nextImagesrc:string = '/assets/pics/like.png';
 }

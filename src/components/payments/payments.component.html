@@ -51,15 +51,16 @@
 
                                 </div>
                                 <div class="down-box">
-                                    <div class="ascending">
-                                        <img class="up-arrow" src="/assets/pics/up.png">
-                                        <p class="text4" (click)="sorting('asc')"> Ascending</p>
+                                    <div class="ascending" [ngClass]="{'active-sort': activeSort === 'asc'}" (click)="sorting('asc')">
+                                      <img class="up-arrow" src="/assets/pics/up.png">
+                                      <p class="text4"> Ascending</p>
                                     </div>
-                                    <div class="descending">
-                                        <img class="down-arrow" src="/assets/pics/down.png">
-                                        <p class="text5" (click)="sorting('dsc')"> Descending</p>
+                                    <div class="descending" [ngClass]="{'active-sort': activeSort === 'dsc'}" (click)="sorting('dsc')">
+                                      <img class="down-arrow" src="/assets/pics/down.png">
+                                      <p class="text5"> Descending</p>
                                     </div>
-                                </div>
+                                  </div>
+                                  
 
                             </div>
 
@@ -74,18 +75,18 @@
                                 <div class="left">
                                     <div class="left-order">
                                         <div class="box13" *ngFor="let k of filter"
-                                            [ngStyle]="{'background': k.background}" (click)="changecolor(k.name)" (click)="toggleDivs()">
-                                            <p class="order-name">
-                                                {{k.name}}
-                                            </p>
+                                            [ngStyle]="{ 'background': k.background }"
+                                            (click)="changecolor(k.name); toggleDivs(k.name)">
+                                            <p class="order-name">{{ k.name }}</p>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="line">
                                 </div>
                                 <div class="right">
                                     <p class="clear" (click)="clearFilters()">Clear All</p>
-                                    <div class="date" *ngIf="!showDivA">
+                                    <div class="date" *ngIf="showDivA">
                                         <div class="date-picker">
                                             <label for="id" class="end-date"> From</label>
                                             <input type="date" id="calendar" [(ngModel)]="fromDate">
@@ -97,9 +98,14 @@
                                         </div>
 
                                     </div>
-                                    <div class="payment-method"  *ngIf="showDivA" >
-                                        upi
+                                    <div class="payment-method" *ngIf="!showDivA">
+                                        <div *ngFor="let i of paymentmethod" class="method-option"
+                                            [class.active]="selectedPaymentMethod === i.name"
+                                            (click)="selectPaymentMethod(i.name)">
+                                            {{ i.name }}
+                                        </div>
                                     </div>
+
 
                                 </div>
                             </div>
@@ -194,7 +200,7 @@
                                         <div class="left1">
                                             <p class="total"> Product Total</p>
                                             <p class="total"> Shipping Charges</p>
-                                            <p class="gst"> GST (included) </p>
+                                            <p class="gst"> GST  </p>
                                         </div>
                                         <div class="right1">
                                             <p class="charges"> :₹ {{k.totalMRP}}</p>
@@ -217,7 +223,7 @@
 
                                         <div class="right-box">
                                             <p class="amt1">
-                                                : - ₹ 0.00
+                                                : - ₹ {{k.discount}}
                                             </p>
                                             <p class="amt1">
                                                 : ₹ {{k.amount}}

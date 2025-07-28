@@ -89,7 +89,11 @@
                         'upi': i.name === 'UPI',
                         'bank':i.name === 'Bank Transfer',
                       }">
-                        <img src="{{i.icon}}">
+                        <img class="pay-icon" [ngClass]="{
+                            
+                            'upi1': i.name === 'UPI',
+                            
+                          }" src="{{i.icon}}">
                         {{i.name}}
                     </div>
                 </div>
@@ -122,9 +126,9 @@
                     - OR -
                 </p>
                 <div class="add-card">
-                     <p class="header4">
+                    <p class="header4">
                         Add Card
-                    </p> 
+                    </p>
                     <div class=card-details>
                         <div class="box5">
                             <div class="innerbox1">
@@ -209,6 +213,7 @@
                                 </div>
 
                             </div>
+
                             <div class="items">
                                 <div class="box7">
                                     <p class="bill">
@@ -220,6 +225,15 @@
                                 </div>
 
                             </div>
+
+                            <div class="items">
+                                <div class="box7">
+                                    <p class="bill">Discount</p>
+                                    <p class="quantity" *ngIf="couponApplied">- ₹{{ couponDiscount }}</p>
+                                    <p class="quantity" *ngIf="!couponApplied">₹0</p>
+                                </div>
+                            </div>
+
                             <div class="items">
                                 <div class="box7">
                                     <p class="bill">

@@ -1,11 +1,11 @@
 <div class="main-content">
     <section>
-        <div class="cards" *ngFor="let card of pageditems">
+        <div class="cards" *ngFor="let card of pageditems,let i=index">
 
             <div class="img">
                 <img class="image" [src]="card.image">
-                <button class="delete"  >
-                    <img class="bin" src="/assets/pics/Icon (14).png">
+                <button class="delete" (click)="toggle(i,$event)" >
+                    <img class="bin"   [src]="selecteditemindex === i ? nextImagesrc : '/assets/pics/like.jpg'">
                 </button>
                 <div class="overlay">
                     <button class="cart-btn" (click)="addtocart(card,$event)"> Add to Cart</button>

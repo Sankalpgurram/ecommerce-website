@@ -16,10 +16,11 @@
        <div class="img">
     
         <img class="image" [src]="card.plants.image">
-        <button class="delete"  (click)="toggle(i,$event)" >
+        <button class="delete" (click)="toggle(i, $event)">
             <img class="bin" 
-            [src]="selecteditemindex === i ? nextImagesrc : '/assets/pics/like.jpg'">
-        </button>
+              [src]="likedItems[i] ? '/assets/pics/like.png' : '/assets/pics/like.jpg'">
+          </button>
+          
         <div class="overlay">  
             <button class="cart-btn" (click)="addtocart(card.plants,$event)"> Add to Cart</button>
         </div>

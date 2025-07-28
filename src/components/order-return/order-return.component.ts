@@ -53,12 +53,32 @@ ngOnInit(): void {
     this.retrievedata();
 }
 
-retrievedata(): void{
- const storedData = localStorage.getItem('orders');
- if(storedData){
-  this.cartitems = JSON.parse(storedData);
-  console.log("data:",this.cartitems);
- }
+
+ 
+totalMRP: number = 0;
+tax: number = 0;
+totalAmount: number = 0;
+orderDate: string = '';
+paymentMethod: string = '';
+shipping: number = 0;
+address: any = {};
+
+
+retrievedata(): void {
+  const storedData = localStorage.getItem('orderplaced');
+  if (storedData) {
+    const data = JSON.parse(storedData);
+
+    this.cartitems = data.cart;
+    this.totalitems = data.totalitems;
+    this.totalMRP = data.totalMRP;
+    this.tax = data.tax;
+    this.totalAmount = data.amount;
+    this.orderDate = data.date;
+    this.paymentMethod = data.payment;
+    this.shipping = data.shipping;
+    this.address = data.address;
+  }
 }
 
 // displaydata: any[] = [];

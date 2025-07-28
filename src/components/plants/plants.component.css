@@ -154,7 +154,7 @@ color:   #002D3E;
     padding-left: 16px;
     border-radius: 24px;
     border-width: 1px;
-    border: 1px solid #BAD8C9;
+    border: 1px solid #D1CFCF;
     margin-left: 7px;
     margin-top: -2px;
     background-color: transparent;
@@ -274,7 +274,7 @@ height: 11px;
         align-items: center;
         padding-right: 10px;
     border-width: 1px;
-    border: 1px solid #BAD8C9;
+    border: 1px solid #D1CFCF;
     background: none;
     font-family: Inter;
     font-weight: 500;
@@ -285,6 +285,18 @@ height: 11px;
     color: #002D3E;
 
 cursor: pointer;
+}
+
+.year:hover{
+    border: 1px solid #BAD8C9;
+    box-shadow: 0px 1px 4px 0px #00000033;
+
+}
+
+.filter:hover{
+    border: 1px solid #BAD8C9;
+    box-shadow: 0px 1px 4px 0px #00000033;
+
 }
 
 .amount{
@@ -466,3 +478,32 @@ cursor: pointer;
     cursor: pointer;
      
 }
+
+.highlighted-category .plant-image {
+    border: 2px solid #62E6A2;
+    background-color: #E3FFF2;
+  }
+  
+
+
+ /* .category-box {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+    transition: border 0.3s, background-color 0.3s;
+  }
+  
+  .category-box:hover {
+    border: 2px solid #62E6A2;
+  }
+  
+  .highlighted-category {
+    border: 2px solid #42b883;
+    background-color: #E3FFF2;
+  }
+   
+
+   .highlighted-category {
+    border: 2px solid #42b883;
+    background-color: #E3FFF2;
+  } */

@@ -59,14 +59,20 @@ export class CheckoutpageComponent implements OnInit {
   totalMRP: number = 0;
   tax: number = 0;
   totalamount: number = 0;
-
+  couponApplied: boolean = false;
+  couponMessage: string = '';
+  couponDiscount: number = 100;   
+  minCartValue: number = 1000;
+  
   constructor(private cartservice: CartService) { }
 
   ngOnInit(): void {
     this.cartitems = this.cartservice.getcartitems();
-    this.calculatetotals();
     this.retrievedata();
-     
+    this.checkCoupon();
+    this.calculatetotals();
+   
+    
   }
 
 
@@ -74,13 +80,27 @@ export class CheckoutpageComponent implements OnInit {
     this.totalitems = this.cartitems.reduce((sum, item) => sum + item.quantity, 0);
     this.totalMRP = this.cartitems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     this.tax = Math.round(this.totalMRP * 0.10);
-    this.totalamount = this.totalMRP + this.tax;
+  
+    const grossTotal = this.totalMRP + this.tax;
+  
+    if (grossTotal < this.minCartValue && this.couponApplied) {
+      this.couponApplied = false;
+      this.couponDiscount = 0;
+      localStorage.removeItem('couponApplied');
+      localStorage.removeItem('couponDiscount');
+    }
+  
+    this.totalamount = this.couponApplied ? grossTotal - this.couponDiscount : grossTotal;
   }
-
+  
+  
+  
   gettotal(): number {
     let total = this.cartitems.reduce((total, item) => total + (item.quantity * Number(item.price)), 0);
     return total;
   }
+
+
 
 
   placeorder() {
@@ -191,6 +211,7 @@ export class CheckoutpageComponent implements OnInit {
       address: this.displayaddress,
       payment: this.selectedpayment,
       totalMRP: this.totalMRP,
+      discount: this.couponDiscount,
       totalitems:this.totalitems,
       username: storedLogin.username,
       plantname: this.cartitems.map(item => item.name).join(', '),
@@ -230,9 +251,11 @@ export class CheckoutpageComponent implements OnInit {
       address: this.displayaddress,
       payment: this.selectedpayment,
       totalMRP: this.totalMRP,
+      discount: this.couponDiscount,
       totalitems:this.totalitems,
       username: storedLogin.username,
       cart: this.cartitems,
+    
       tax: this.tax,
       shipping: 0,  
       amount: this.totalamount,
@@ -247,5 +270,37 @@ export class CheckoutpageComponent implements OnInit {
   }
   localStorage.setItem('orderplaced', JSON.stringify(cartDetails));
 }
+
+
+applyCoupon(): void {
+  const grossTotal = this.totalMRP + this.tax;
+
+  if (grossTotal >= this.minCartValue && !this.couponApplied) {
+    this.couponApplied = true;
+    this.totalamount = grossTotal - this.couponDiscount;
+    this.couponMessage = 'Coupon Applied';
+  } else if (grossTotal < this.minCartValue) {
+    const remaining = this.minCartValue - grossTotal;
+    this.couponMessage = `Shop for ₹${remaining} more to apply this coupon.`;
+    setTimeout(() => {
+      this.couponMessage = '';
+    }, 2000);
+  }
+}
+
+checkCoupon(): void {
+  const couponApplied = localStorage.getItem('couponApplied') === 'true';
+  const discountStr = localStorage.getItem('couponDiscount');
+
+  if (couponApplied && discountStr !== null) {
+    this.couponApplied = true;
+    this.couponDiscount = parseInt(discountStr, 10);
+  } else {
+    this.couponApplied = false;
+    this.couponDiscount = 0;
+  }
+}
+
+
 
 }

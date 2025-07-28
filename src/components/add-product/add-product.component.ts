@@ -240,6 +240,9 @@ export class AddProductComponent {
       productDetails.push(this.dummypots);
      
       localStorage.setItem('potsdata', JSON.stringify(productDetails));
+      this.files = [];
+      this.product.image = '';
+      form.resetForm();
 
   }
 
@@ -259,6 +262,8 @@ this.plantDummyData.id = this.product.id
     productDetails.push(this.plantDummyData);
    
     localStorage.setItem('plantdata', JSON.stringify(productDetails)); }
+    this.files = [];
+    this.product.image = '';
     form.resetForm();
 
   }

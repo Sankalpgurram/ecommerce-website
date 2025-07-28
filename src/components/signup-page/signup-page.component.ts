@@ -10,7 +10,7 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './signup-page.component.css'
 })
 export class SignupPageComponent {
-
+isSubmitted:boolean = false;
 signup= {
   username:'',
   email: '',
@@ -22,21 +22,51 @@ signup= {
 
 constructor(private router:Router) {}
 showerror: boolean =false;
-
+showerror1: boolean =false;
+showerror2: boolean =false;
+showerror3: boolean =false;
+showerror4: boolean =false;
 hide(){
   
   this.showerror=false;
+  this.showerror1=false;
+  this.showerror2=false;
+  this.showerror3=false;
+  this.showerror4=false;
 }
 
 onsignup(form:NgForm){
   const users = JSON.parse(localStorage.getItem('users') || '[]');
 
   const existingUser= users.find((user:any)=> user.username === this.signup.username);
+  this.isSubmitted = true;
+  if(this.signup.username =='' && this.signup.email=='' && this.signup.phone == '' && this.signup.password == ''){
+    this.showerror1 = true;
+    return;
+  }
+
+  if(this.signup.email==''){
+    this.showerror2 = true;
+    return;
+  }
+
+  if(this.signup.phone==''){
+    this.showerror3 = true;
+    return;
+  }
+
+  if(this.signup.password==''){
+    this.showerror4 = true;
+    return;
+  }
+
+
 
   if(existingUser){
     //alert('Username already Exists!');
     this.showerror = true;
     form.resetForm();
+    this.isSubmitted = false;
     return;
   }
 
@@ -54,8 +84,13 @@ onsignup(form:NgForm){
   localStorage.setItem('users', JSON.stringify(users));
 
   alert('Account created successfully!');
-  this.router.navigate(['/login']); 
+  this.router.navigate(['/login']);
+  this.isSubmitted = false; 
 }
 
+filterNumbers(event: any): void {
+  event.target.value = event.target.value.replace(/[^0-9]/g, '');
+  this.signup.phone = event.target.value;
+}
 
 }

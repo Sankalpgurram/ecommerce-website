@@ -38,7 +38,9 @@
                                     <div class="upper-box">
                                         <div class="order-id" *ngFor="let k of sort">
                                             <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'"
-                                                [value]="k.value" [(ngModel)]="selectedbtn">
+                                            [value]="k.value" [(ngModel)]="selectedbtn" 
+                                            (change)="setSortField(k.value)">
+                                     
                                             <label [for]="'radio-' + k.id" id="order"
                                                 name="order"> <p class="para"> {{k.name}} </p></label>
 
@@ -48,21 +50,26 @@
 
                                     </div>
                                     <div class="down-box">
-                                        <div class="ascending">
-                                            <img class="up-arrow" src="/assets/pics/up.png">
-                                            <p class="text4" (click)="sorting('asc')"> Ascending</p>
+                                        <div class="ascending" 
+                                             [ngClass]="{'active-sort': activeSort === 'asc'}" 
+                                             (click)="sorting('asc')">
+                                          <img class="up-arrow" src="/assets/pics/up.png">
+                                          <p class="text4"> Ascending</p>
                                         </div>
-                                        <div class="descending">
-                                            <img class="down-arrow" src="/assets/pics/down.png">
-                                            <p class="text5" (click)="sorting('dsc')"> Descending</p>
+                                        <div class="descending" 
+                                             [ngClass]="{'active-sort': activeSort === 'dsc'}" 
+                                             (click)="sorting('dsc')">
+                                          <img class="down-arrow" src="/assets/pics/down.png">
+                                          <p class="text5"> Descending</p>
                                         </div>
-                                    </div>
+                                      </div>
+                                      
 
                                 </div>
 
                             </div>
                         </div>
-                        <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}"
+                        <!-- <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}"
                                 (click)="visible()" class="filter">
                                 Filter
                             </button>
@@ -94,7 +101,7 @@
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>

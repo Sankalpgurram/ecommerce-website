@@ -89,11 +89,24 @@ Banner={
 
 onSubmit() {
 
-  console.log('Form Submitted');
+  alert('Form Submitted');
   let BannerDetails = JSON.parse(localStorage.getItem('addBanner') || '[]');
   BannerDetails.push(this.Banner);
   localStorage.setItem('addBanner', JSON.stringify(BannerDetails));
+ 
+this.Banner = {
+  name: '',
+  startdate: '',
+  endDate: '',
+  type: '',
+  location: '',
+  url: '',
+  status: '',
+  description: '',
+  image: ''
+};
 
-}
+ 
+this.files = [];
 
-}
+} }

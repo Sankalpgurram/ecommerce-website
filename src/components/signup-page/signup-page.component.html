@@ -16,29 +16,34 @@
                     <div class="details">
                         <div class="name">
                             <p class="user"> Username </p>
-                            <input type="text" id="username" name="username" [(ngModel)]="signup.username" required placeholder="Enter Username" (click)="hide()">
+                            <input type="text" id="username" name="username" [(ngModel)]="signup.username" required
+                                placeholder="Enter Username" (click)="hide()">
                         </div>
                         <p class="error" *ngIf="showerror"> Username already Exists!</p>
-
+                        <p class="error" *ngIf="signup.username == '' && isSubmitted"> Please Fill Username!</p>
                         <div class="box2">
                             <div class="left">
-                                <p class="user"> Email </p>
-                                <input type="text" id="email" name="username" [(ngModel)]="signup.email" required  placeholder="Enter your Email ID">
+                                <p class="user"> Email </p>    
+                                <input type="text" id="email" name="email" required [(ngModel)]="signup.email" 
+                                    placeholder="Enter your Email ID" (click)="hide()"> <p class="error1" *ngIf="signup.email == '' && isSubmitted" > Please Fill Email!</p>
                             </div>
+                         
                             <div class="right">
                                 <p class="user"> Phone Number </p>
-                                <input type="text" id="phone" name="username" [(ngModel)]="signup.phone" required  placeholder="+91">
+                                <input type="tel" id="phone" name="phone" required [(ngModel)]="signup.phone" 
+                                    placeholder="+91" pattern="[0-9]*" maxlength="10"  (input)="filterNumbers($event)" (click)="hide()"><p class="error1" *ngIf="signup.phone == '' && isSubmitted"> Please Fill PhoneNumber!</p>
 
                             </div>
                         </div>
 
                         <div class="password">
                             <p class="user"> Password </p>
-                            <input type="text" id="passcode" name="username" [(ngModel)]="signup.password" required  placeholder="Create Your Password">
+                            <input type="text" id="passcode" name="password" required [(ngModel)]="signup.password" 
+                                placeholder="Create Your Password"> <p class="error1" *ngIf="signup.password == '' && isSubmitted" > Please Fill Password!</p>
                         </div>
                     </div>
 
-                    <button  type="submit" [disabled]="!signupForm.valid" class="signup-btn">
+                    <button type="submit"   class="signup-btn">
                         Sign up
                     </button>
                 </div>
@@ -51,14 +56,19 @@
                     </div>
 
                     <div class="sign-in">
-                    <div class="header2"> <p class="login" [routerLink]="['/login']" >
-                            Sign In
-                        </p> </div> 
-                        <div class="signin-buttons" >
-                            <button type="button" class="btn-1"(click)="$event.stopPropagation()" ><img class=google src="/assets/pics/google.png" (click)="$event.stopPropagation()"></button>
-                            <button type="button"class="btn-1"(click)="$event.stopPropagation()"><img class=google src="/assets/pics/facebook.png" (click)="$event.stopPropagation()"></button>
-                            <button type="button"class="btn-1"(click)="$event.stopPropagation()"><img class=google src="/assets/pics/Vector copy.png" (click)="$event.stopPropagation()"></button>
-                          </div>
+                        <div class="header2">
+                            <p class="login" [routerLink]="['/login']">
+                                Sign In
+                            </p>
+                        </div>
+                        <div class="signin-buttons">
+                            <button type="button" class="btn-1" (click)="$event.stopPropagation()"><img class=google
+                                    src="/assets/pics/google.png" (click)="$event.stopPropagation()"></button>
+                            <button type="button" class="btn-1" (click)="$event.stopPropagation()"><img class=google
+                                    src="/assets/pics/facebook.png" (click)="$event.stopPropagation()"></button>
+                            <button type="button" class="btn-1" (click)="$event.stopPropagation()"><img class=google
+                                    src="/assets/pics/Vector copy.png" (click)="$event.stopPropagation()"></button>
+                        </div>
                     </div>
                 </div>
             </div>

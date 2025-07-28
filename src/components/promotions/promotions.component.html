@@ -12,9 +12,9 @@
                         </div>
 
                         <input type="text" placeholder="plants, seeds, fertilizers...." name="search"
-                            id="search-container" style="border:none; color:#828282B2;background-color: transparent;"
-                            [(ngModel)]="search" [class.shift]="isshift " (click)="movetext()" (click)="moveImage()"
-                            [readOnly]="!ismoved">
+                            id="search-container" style="border:none; color:#828282B2; background-color: transparent;"
+                            [(ngModel)]="search" [class.shift]="isshift" (input)="searchBanners()"
+                            (click)="movetext(); moveImage()" [readOnly]="!ismoved">
 
                     </div>
                     <img class="profile" src="assets/pics/Profile.jpg">
@@ -25,17 +25,73 @@
                     <div class="head2">
                         <p class="customer1"> Promotions & banners </p>
                         <div class="sort">
-                            <p class="sortby"> Sort by : </p>
+                            <!-- <p class="sortby"> Sort by : </p>
                             <select class="year">
                                 <option> Popularity
                                 <option>
                                 <option> newer</option>
                                 <option> Older</option>
-                            </select>
+                            </select> -->
 
-                            <button class="filter">
-                                Filter
-                            </button>
+                            <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}"
+                                    (click)="visible()" class="filter">
+                                    Filter
+                                </button>
+                                <div class="drop-content2" *ngIf="showcontent">
+                                    <div class="filter-box">
+                                        <div class="left">
+                                            <div class="left-order">
+                                                <div class="box13" *ngFor="let k of filter"
+                                                    [ngStyle]="{ 'background': k.background }"
+                                                    (click)="changecolor(k.name); toggleDivs(k.name)">
+                                                    <p class="order-name">{{ k.name }}</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                        </div>
+                                        <div class="right">
+                                            <p class="clear" (click)="clearFilters()">Clear All</p>
+                                            <div class="date" *ngIf="showDivA">
+                                                <div class="date-picker">
+                                                    <label for="id" class="end-date"> From</label>
+                                                    <input type="date" id="calendar" [(ngModel)]="fromDate">
+                                                </div>
+
+                                                <div class="date-picker1">
+                                                    <label for="id" class="to"> To</label>
+                                                    <input type="date" id="calendar" [(ngModel)]="toDate">
+                                                </div>
+
+                                            </div>
+                                            <div class="payment-method" *ngIf="!showDivA">
+                                                <div *ngFor="let i of paymentmethod" class="method-option"
+                                                    [class.active]="selectedPaymentMethod === i.name"
+                                                    (click)="selectPaymentMethod(i.name)">
+                                                    {{ i.name }}
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="button-box">
+                                        <button class="close" (click)="visible()">
+                                            <p class="text1">
+                                                Close
+                                            </p>
+                                        </button>
+
+                                        <button class="apply" (click)="applyFilter()" (click)="visible()">
+                                            <p class="text2">
+                                                Apply
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,8 +146,8 @@
                             </p>
                         </div>
 
-                        <p class="date">
-                            {{i.startdate}}
+                        <p class="date1">
+                            {{i.dateRange}}
                         </p>
 
                         <div class="status">
@@ -102,7 +158,7 @@
 
                         <div class="actions">
                             <img class="bin" (click)="removeitem(k)" src="/assets/pics/icon (13).png">
-                            <img class="pen" src="/assets/pics/pen.png">
+
                         </div>
 
                     </div>

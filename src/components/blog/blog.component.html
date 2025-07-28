@@ -5,9 +5,10 @@
 
                 <p class="para1"> Blogs</p>
             </div>
-            <div class="view">
+            <div class="view" *ngIf="showViewAllBtn">
                 <button class="btn" [routerLink]="['/blogpage']"> View All Blogs</button>
             </div>
+            
         </div>
         <div class="content" >
             <div class="cards" *ngFor="let card of blogs" >

@@ -374,4 +374,14 @@ height: 22px;
 
 .error{
     color: red;
+    font-family: Inter;
+    font-size: 14px;
+    height: 0px;
+}
+
+.error1{
+    color: red;
+    font-family: Inter;
+    font-size: 14px;
+    height: 0px;
 }

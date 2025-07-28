@@ -184,32 +184,29 @@ activeSort: 'asc' | 'dsc' | '' = '';
 fromDate: string = '';
 toDate: string = '';
 
-applyFilter(): void {
-  let filteredItems = [...this.displaydata];
+// applyFilter(): void {
+//   let filteredItems = [...this.displaydata];
 
-  if (this.fromDate && this.toDate) {
-    const from = new Date(this.fromDate + 'T00:00:00');
-    const to = new Date(this.toDate + 'T23:59:59');
+//   if (this.fromDate && this.toDate) {
+//     const from = new Date(this.fromDate + 'T00:00:00');
+//     const to = new Date(this.toDate + 'T23:59:59');
 
-    filteredItems = filteredItems.filter(item => {
-      if (!item.checkoutDate) return false;
+//     filteredItems = filteredItems.filter(item => {
+//       if (!item.checkoutDate) return false;
 
-      const orderDate = new Date(item.checkoutDate);
+//       const orderDate = new Date(item.checkoutDate);
 
-      return orderDate >= from && orderDate <= to;
-    });
-  }
+//       return orderDate >= from && orderDate <= to;
+//     });
+//   }
 
-}
-
-
-
+// }
 
 amountSort: string = '';
 selectedbtn: any;
 sorting(sortingOrder: 'asc' | 'dsc'): void {
   if (!this.selectedbtn) return;
-
+  this.activeSort = sortingOrder;
   let sorted = [...this.displaydata];
 
   switch (this.selectedbtn) {
@@ -234,11 +231,13 @@ sorting(sortingOrder: 'asc' | 'dsc'): void {
 }
 
 
-clearSort() {
-  this.selectedbtn = 'amount';  
-  this.sorting('asc');    
-  this.retrievedata();      
+clearSort(): void {
+  this.selectedbtn = 'amount'; 
+  this.activeSort = '';
+  this.displaydata = [...this.originalData];
+  this.calculateTotals();
 }
+
 
 clearFilters(): void {
   this.fromDate = '';
@@ -253,4 +252,16 @@ clearFilters(): void {
   this.paginateitems();
 }
 
+
+setSortField(field: string): void {
+  this.selectedbtn = field;
+
+  if (this.activeSort) {
+    this.sorting(this.activeSort);  
+  }
 }
+
+
+}
+
+

@@ -24,9 +24,22 @@ export class ProductsComponent implements OnInit {
  @Input() topseller:any
 
 constructor(private cartservice:CartService,private router:Router) {}
+likedItems: boolean[] = [];
 
 ngOnInit(): void {
     this.retrievedata();
+    this.initializeLikes();
+}
+
+
+
+initializeLikes(): void {
+  const storedLikes = localStorage.getItem('homelikes');
+  if (storedLikes) {
+    this.likedItems = JSON.parse(storedLikes);
+  } else {
+    this.likedItems = this.topseller.map(() => false);
+  }
 }
 
 display: any[]=[];
@@ -65,9 +78,11 @@ count:number=1;
 size:string='S';
 selecteditemindex: number | null = null;
 
-toggle(index:number,event?:any): void {
+toggle(index: number, event?: any): void {
   event?.stopPropagation();
-  this.selecteditemindex = this.selecteditemindex === index ? null : index;
+  this.likedItems[index] = !this.likedItems[index];
+  localStorage.setItem('homelikes', JSON.stringify(this.likedItems));
 }
+
 nextImagesrc:string = '/assets/pics/like.png';
 }

@@ -5,16 +5,16 @@
         </div>
 
         <div class="pics">
-            <div *ngFor="let i of data" (click)="handleCategoryClick(i)">
+            <div *ngFor="let i of data" (click)="handleCategoryClick(i)"
+
+                [ngClass]="{ 'highlighted-category': selectedCategory === i.name }" class="category-card">
                 <div class="img">
-                    <img class="plant-image" [src]="i.url">
+                    <img class="plant-image" [src]="i.url" />
                 </div>
                 <div class="plant">
                     <p style="margin-top: 15px;">{{ i.name }}</p>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>
@@ -42,7 +42,9 @@
                                     <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'" [value]="k.name"
                                         [(ngModel)]="selectedbtn" (ngModelChange)="onSortChangeFromRadio(k.value)"
                                         style="cursor: pointer;">
-                                    <label [for]="'radio-' + k.id" id="order" name="order"><p class="para">{{k.name}}</p></label>
+                                    <label [for]="'radio-' + k.id" id="order" name="order">
+                                        <p class="para">{{k.name}}</p>
+                                    </label>
                                 </div>
                             </div>
 
@@ -66,12 +68,11 @@
                             <div class="left">
                                 <div class="left-order">
                                     <div class="box13" *ngFor="let k of filter"
-                                        [ngStyle]="{'background': selectedFilters.includes(k.name) ? '#9EFFCD' : 'transparent'}"
-                                        (click)="changecolor(k.name)">
-                                        <p class="order-name">
-                                            {{k.name}}
-                                        </p>
+                                        [ngStyle]="{'background': selectedCategory === k.name ? '#9EFFCD' : 'transparent'}"
+                                        (click)="filterByCategory(k.name)">
+                                        <p class="order-name">{{k.name}}</p>
                                     </div>
+
 
                                 </div>
                             </div>
@@ -80,7 +81,7 @@
 
                         </div>
                         <button class="apply" (click)="applyFilter()">
-                             Apply
+                            Apply
                         </button>
 
                     </div>
@@ -101,3 +102,4 @@
 </app-plant-category>
 
 <app-discount></app-discount>
+<app-footer></app-footer>

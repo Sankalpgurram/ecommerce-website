@@ -16,11 +16,6 @@ export class BlogComponent {
   ]
 
   @Input() blogs:any
-//  @Output() messageEvent = new EventEmitter<string>();
+  @Input() showViewAllBtn: boolean = true;
 
-//  sendMessage(){
-//   this.messageEvent.emit("hello world");
-//  }
-
-// 
 }

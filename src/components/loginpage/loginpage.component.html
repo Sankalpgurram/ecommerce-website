@@ -12,18 +12,26 @@
         </div>
       </div>
       <div class="user-details">
-        <form class="login-form" #loginForm="ngForm"  (ngSubmit)="onSubmit(loginForm)">
-         <p class="name"> Username </p>
-          <input type="text" id="username" name="username" placeholder="Enter User ID" [(ngModel)]="login.username" required (click)="hide()">
+        <form class="login-form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+          <p class="name"> Username </p>
+          <input type="text" id="username" name="username" placeholder="Enter User ID" [(ngModel)]="login.username"
+            required (click)="hide()">
           <p class="error" *ngIf="showerror"> User not found. Please sign up!</p>
+          <p class="error" *ngIf="showerror2"> Please Fill up details!</p>
           <br> <br>
 
           <p class="name">Password</p>
-          <input class="password" type="password" id="password" name="password" placeholder="Enter your Password"
-            required [(ngModel)]="login.password" (click)="hide()">
-            <p class="error" *ngIf="showDiv"> wrong password!</p>
+          <div class="password-wrapper">
+            <input [type]="showPassword ? 'text' : 'password'" class="password" id="password" name="password"
+              placeholder="Enter your Password" required [(ngModel)]="login.password" (click)="hide()">
+            <img [src]="showPassword ? '/assets/pics/blueye.png' : '/assets/pics/password.png'" class="eye-icon"
+              (click)="togglePasswordVisibility()" />
+
+          </div>
+          <p class="error" *ngIf="showDiv"> wrong password!</p>
+          <p class="error" *ngIf="showDiv1"> Please Enter password!</p>
           <br> <br>
-          <button id="sign-in" type="submit" [disabled]="!loginForm.valid">Sign In</button>
+          <button id="sign-in" type="submit" >Sign In</button>
         </form>
       </div>
       <div class="sign-options">

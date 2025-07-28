@@ -14,7 +14,7 @@ export class PaymentsComponent implements OnInit {
   search: string = '';
   ismoved = false;
   isshift = false;
-  paymentTemp:any[]=[];
+  paymentTemp: any[] = [];
 
   moveImage() {
     this.ismoved = !this.ismoved;
@@ -26,7 +26,7 @@ export class PaymentsComponent implements OnInit {
   }
 
 
-  constructor(private el: ElementRef,private page:InventoryService) { }
+  constructor(private el: ElementRef, private page: InventoryService) { }
   @HostListener('document:click', ['$event']) onClick(event: MouseEvent) {
     const clickedElement = event.target as HTMLElement;
 
@@ -40,9 +40,19 @@ export class PaymentsComponent implements OnInit {
       }
 
     }
+
+    if (!clickedElement.closest('.dropdown3')) {
+      this.showdata = false;
+    }
+
+    if (!clickedElement.closest('.dropdown2')) {
+      this.showcontent = false;
+      this.color = false;
+    }
+
   }
 
-  payment: any[] = [];  
+  payment: any[] = [];
   selecteditemindex: number | null = null;
 
   ngOnInit(): void {
@@ -52,24 +62,21 @@ export class PaymentsComponent implements OnInit {
       this.payment = JSON.parse(data);
       this.paymentTemp = [...this.payment];
       this.updatePagination()
-      this.selectedbtn='Amount';
+      this.selectedbtn = 'Amount';
+      this.showDivA = true;
     }
   }
 
-   // if (this.selectedbutton === 'Amount' && this.amountSortOrder) {
+  // if (this.selectedbutton === 'Amount' && this.amountSortOrder) {
   //   filteredItems.sort((a, b) => {
   //     return this.amountSortOrder === 'asc' ? a.amount - b.amount : b.amount - a.amount;
   //   });
   // }
 
-  toggle(index:number): void{
-    this.selecteditemindex =this.selecteditemindex === index ? null : index;
+  toggle(index: number): void {
+    this.selecteditemindex = this.selecteditemindex === index ? null : index;
     console.log("image clicked");
   }
-
-
-
-
 
 
   updatePagination(): void {
@@ -89,13 +96,11 @@ export class PaymentsComponent implements OnInit {
     }
   }
 
-allitems:any;
+  allitems: any;
   pageditems: any[] = [];
   currentpage: number = 1;
   itemsperpage: number = 10;
-  totalpages: number=0;
-
-
+  totalpages: number = 0;
 
 
 
@@ -105,8 +110,8 @@ allitems:any;
     this.pageditems = this.payment.slice(startindex, endindex);
 
   }
-  
-  
+
+
 
   gotopage(page: number): void {
     if (page >= 1 && page <= this.totalpages) {
@@ -117,179 +122,200 @@ allitems:any;
   }
 
 
-//   sortByPrice(order: string) {
-   
-//     if (order === 'lowToHigh') {
-//       this.payment.sort((a: any, b: any) => a.amount - b.amount);
-//       this.paginateitems();
-//     } else if (order === 'highToLow') {
-//       this.payment.sort((a: any, b: any) => b.amount - a.amount);
-//       this.paginateitems();
-//     }
+  //   sortByPrice(order: string) {
+
+  //     if (order === 'lowToHigh') {
+  //       this.payment.sort((a: any, b: any) => a.amount - b.amount);
+  //       this.paginateitems();
+  //     } else if (order === 'highToLow') {
+  //       this.payment.sort((a: any, b: any) => b.amount - a.amount);
+  //       this.paginateitems();
+  //     }
+
+  // }
+
+  // onSortChange(event: Event) {
+  //   const value = (event.target as HTMLSelectElement).value;
+  //   this.sortByPrice(value);
+  // }
+
+
+ applySearch(): void {
   
-// }
-
-// onSortChange(event: Event) {
-//   const value = (event.target as HTMLSelectElement).value;
-//   this.sortByPrice(value);
-// }
-
-
-applySearch(): void {
-  let filteredItems;
-  if(this.paymentTemp.length == 0) {
-    this.paymentTemp = this.payment
-    filteredItems = [...this.paymentTemp];
-  }else{
-    filteredItems = [...this.paymentTemp];
-  }
+  this.payment = [...this.paymentTemp];
 
   if (this.search && this.search.trim()) {
-    filteredItems = filteredItems?.filter((item: any) =>
-      item.name.toLowerCase().includes(this.search.toLowerCase()) ||
-      item.id.toLowerCase().includes(this.search.toLowerCase())
+    const searchText = this.search.toLowerCase();
+
+    this.payment = this.payment.filter((item: any) =>
+      item.name?.toLowerCase().includes(searchText) ||
+      item.id?.toLowerCase().includes(searchText) ||
+      item.payment?.toLowerCase().includes(searchText) ||
+      item.checkoutDate?.toLowerCase().includes(searchText)
     );
-
-    this.payment = filteredItems || [];
-
-    console.log(this.payment)
-
   }
+
+  this.currentpage = 1;
   this.updatePagination();
 }
-nextImagesrc: string = '/assets/pics/blueye.png';
 
-filter = [
-  { name: "Date of Payment", background: "white" },
-  { name: "Payment Method", background: "white" },
-]
+  nextImagesrc: string = '/assets/pics/blueye.png';
 
-selectedbutton: string = '';
+  filter = [
+    { name: "Date of Payment", background: "white", value: 'date' },
+    { name: "Payment Method", background: "white" },
+  ]
 
-changecolor(id: string) {
-  this.selectedbutton = id;
-  this.filter = this.filter.map(item => {
-    if (item.name === id) {
-      return { ...item, background: '#9EFFCD' };
-    } else {
-      return { ...item, background: 'white' };
-    }
-  });
-}
+  selectedbutton: string = '';
 
-
-showcontent: boolean = false;
-color: boolean = false;
-
-
-showDivA: boolean = true;  
-
-toggleDivs(): void {
-  this.showDivA = !this.showDivA; 
-}
-
-visible() {
-  this.showcontent = !this.showcontent;
-  this.color = !this.color;
-  if (this.showcontent) {
-    this.showdata = false;
-  } }
-
-showdata: boolean = false;
-
-show() {
-  this.showdata = !this.showdata;
-
-  
-  if (this.showdata) {
-    this.showcontent = false;
-    this.color = false;
-  }
-}
-
-selectedvalue: any;
-sort = [
- 
-  { id: 1, name: "Amount", value: "Amount" },
-];
-
-
-activeSort: 'asc' | 'dsc' | '' = '';
-
-
-fromDate: string = '';
-toDate: string = '';
-
-applyFilter(): void {
-  let filteredItems = [...this.payment];
-
-  if (this.fromDate && this.toDate) {
-    const from = new Date(this.fromDate + 'T00:00:00');
-    const to = new Date(this.toDate + 'T23:59:59');
-
-    filteredItems = filteredItems.filter(item => {
-      if (!item.checkoutDate) return false;
-
-      const orderDate = new Date(item.checkoutDate);
-
-      return orderDate >= from && orderDate <= to;
+  changecolor(id: string) {
+    this.selectedbutton = id;
+    this.filter = this.filter.map(item => {
+      if (item.name === id) {
+        return { ...item, background: '#9EFFCD' };
+      } else {
+        return { ...item, background: 'white' };
+      }
     });
   }
 
-  this.payment = filteredItems;
-  this.totalpages = Math.ceil(this.payment.length / this.itemsperpage);
-  this.currentpage = 1;
 
-  this.calculatePageNumbers();
-  this.paginateitems();
-}
+  showcontent: boolean = false;
+  color: boolean = false;
 
 
+  showDivA: boolean = true;
 
+  activeFilter: string = '';
 
-amountSort: string = '';
-selectedbtn: any;
-sorting(sortingOrder: 'asc' | 'dsc'): void {
-  if (!this.selectedbtn) return;
+  toggleDivs(filterType: string): void {
+    this.activeFilter = filterType;
 
-
-  let sorted = [...this.payment];
-
-  switch (this.selectedbtn) {
-    case 'Amount':
-      sorted.sort((a, b) => sortingOrder === 'asc' ? a.amount - b.amount : b.amount - a.amount);
-      break;
+    if (filterType === 'Date of Payment') {
+      this.showDivA = true;
+    } else if (filterType === 'Payment Method') {
+      this.showDivA = false;
+    }
   }
 
-  this.payment = sorted;
-  this.currentpage = 1;
-  this.paginateitems();
-}
+  selectedPaymentMethod: string = 'date';
+
+  selectPaymentMethod(method: string): void {
+    this.selectedPaymentMethod = method;
+  }
 
 
-clearSort() {
-  this.selectedbtn = 'Amount';
-}
+  visible() {
+    this.showcontent = !this.showcontent;
+    this.color = !this.color;
+    if (this.showcontent) {
+      this.showdata = false;
+    }
+  }
+
+  showdata: boolean = false;
+
+  show() {
+    this.showdata = !this.showdata;
 
 
-clearFilters(): void {
-  this.fromDate = '';
-  this.toDate = '';
-  this.selectedbutton = '';
-  this.selectedbtn = 'Amount';  
-  this.filter = this.filter.map(item => ({ ...item, background: 'white' }));
- 
-  this.currentpage = 1;
- 
-  this.calculatePageNumbers();
-  this.paginateitems();
-}
+    if (this.showdata) {
+      this.showcontent = false;
+      this.color = false;
+    }
+  }
 
-paymentmethod=[
-  {name:"Card"},
-  {name:"Wallet"},
-  {name:"Bank Transfer"},
-  {name:"UPI"}
-]
+  selectedvalue: any;
+  sort = [
+
+    { id: 1, name: "Amount", value: "Amount" },
+  ];
+
+
+  activeSort: 'asc' | 'dsc' | '' = '';
+
+
+  fromDate: string = '';
+  toDate: string = '';
+
+  applyFilter(): void {
+    let filteredItems = [...this.paymentTemp];
+
+
+    if (this.fromDate && this.toDate) {
+      const from = new Date(this.fromDate + 'T00:00:00');
+      const to = new Date(this.toDate + 'T23:59:59');
+
+      filteredItems = filteredItems.filter(item => {
+        if (!item.checkoutDate) return false;
+        const orderDate = new Date(item.checkoutDate);
+        return orderDate >= from && orderDate <= to;
+      });
+    }
+
+
+    if (this.selectedPaymentMethod) {
+      filteredItems = filteredItems.filter(item =>
+        item.payment?.toLowerCase() === this.selectedPaymentMethod.toLowerCase()
+      );
+    }
+
+    this.payment = filteredItems;
+    this.currentpage = 1;
+    this.updatePagination();
+  }
+
+
+
+
+  amountSort: string = '';
+  selectedbtn: any;
+  sorting(sortingOrder: 'asc' | 'dsc'): void {
+    if (!this.selectedbtn) return;
+
+    this.activeSort = sortingOrder;  
+    let sorted = [...this.payment];
+  
+    switch (this.selectedbtn) {
+      case 'Amount':
+        sorted.sort((a, b) => sortingOrder === 'asc' ? a.amount - b.amount : b.amount - a.amount);
+        break;
+    }
+  
+    this.payment = sorted;
+    this.currentpage = 1;
+    this.paginateitems();
+  }
+  
+
+
+  clearSort() {
+    this.selectedbtn = 'Amount';
+    this.payment = [...this.paymentTemp];
+    this.updatePagination();
+    this.showdata = false;
+    this.activeSort = ''; 
+  }
+
+
+  clearFilters(): void {
+    this.fromDate = '';
+    this.toDate = '';
+    this.selectedbutton = '';
+    this.selectedbtn = 'Amount';
+    this.selectedPaymentMethod = '';
+    this.filter = this.filter.map(item => ({ ...item, background: 'white' }));
+    this.payment = [...this.paymentTemp];
+    this.currentpage = 1;
+    this.updatePagination();
+  }
+
+
+  paymentmethod = [
+    { name: "Card" },
+    { name: "Wallet" },
+    { name: "Bank Transfer" },
+    { name: "UPI" }
+  ]
 
 }

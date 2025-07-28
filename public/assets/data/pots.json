@@ -1,15 +1,10 @@
 {
     "category":[
-        {"name": "Indoor Plants ","url": "assets/pics/Group 5.jpg","link":"/plants"
-    },
-    {"name": "Outdoor Plants","url": "assets/pics/image.jpg","link":"/plants"
-    },
-    {"name": "Pots and Accesories","url": "assets/pics/img.jpg","link":"/potspage"
-    },
-    {"name": "Gift & Combos","url": "assets/pics/plant.jpg","link":"/potspage"
-    },
-    {"name": "Seeds","url": "assets/pics/Group 7.jpg","link":"/seedspage"
-    }
+        { "name": "Indoor Plants", "url": "assets/pics/Group 5.jpg", "link": "/plants", "category": "Indoor Plant" },
+        { "name": "Outdoor Plants", "url": "assets/pics/image.jpg", "link": "/plants", "category": "Outdoor Plant" },
+        { "name": "Pots and Accesories", "url": "assets/pics/img.jpg", "link": "/potspage", "category": "Pots and Accessories" },
+        { "name": "Gift & Combos", "url": "assets/pics/plant.jpg", "link": "/potspage", "category": "Gift & Combos" },
+        { "name": "Seeds", "url": "assets/pics/Group 7.jpg", "link": "/seedspage", "category": "Seeds" }
     ],
 
     "pots":[

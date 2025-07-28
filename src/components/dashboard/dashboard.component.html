@@ -53,7 +53,7 @@
                         <div class="total-customers">
                             <img class="shopping" src="/assets/pics/shopping.png">
                             <div class="box4">
-                                <p class="value3"> 1254</p>
+                                <p class="value3"> {{totalCustomers}}</p>
                                 <p class="value4"> Total Customers</p>
                             </div>
                         </div>
@@ -61,12 +61,43 @@
                 </div>
             </div>
                 <div class="orders">
-                    <div class="totalorder" *ngFor="let i of order" [ngStyle]="{'background': i.background }">
+                    <div class="totalorder">
                         <div class="box5">
-                            <p class="para1"> {{i.value}}</p>
-                            <p class="para2"> {{i.text}}</p>
+                            <p class="para1">{{ totalOrdersToday }} </p>
+                            <p class="para2"> Total Orders today </p>
                         </div>
                     </div>
+
+                    <div class="totalorder2">
+                        <div class="box5">
+                            <p class="para1"> 4 </p>
+                            <p class="para2">  Active Users Now </p>
+                        </div>
+                    </div>
+
+                    <div class="totalorder3">
+                        <div class="box5">
+                            <p class="para1"> ₹{{ monthlyRevenue }} </p>
+                            <p class="para2"> Revenue this month </p>
+                        </div>
+                    </div>
+
+
+                    <div class="totalorder4">
+                        <div class="box5">
+                            <p class="para1"> 0 </p>
+                            <p class="para2"> Return Requests today </p>
+                        </div>
+                    </div>
+
+                    <div class="totalorder5">
+                        <div class="box5">
+                            <p class="para1"> 0 </p>
+                            <p class="para2">Payment failures</p>
+                        </div>
+                    </div>
+
+
                 </div>
            
 

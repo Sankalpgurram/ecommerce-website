@@ -93,5 +93,12 @@ export class SeedcategoryComponent implements OnInit, OnChanges {
     }
   }
 
+  selecteditemindex: number | null = null;
+
+  toggle(index:number,event?:any): void {
+    event?.stopPropagation();
+    this.selecteditemindex = this.selecteditemindex === index ? null : index;
+  }
+  nextImagesrc:string = '/assets/pics/like.png';
 
 }

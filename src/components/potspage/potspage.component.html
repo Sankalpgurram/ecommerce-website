@@ -7,15 +7,21 @@
 
         <div class="pics">
             @if(category) {
-            <div *ngFor=" let i of category " [routerLink]="[i.link]">
-                <div class="img"> 
-                    <img class="plant-image" [src]="i.url"> </div>
-                <div class="plant">
-                    <p style="margin-top: 15px;"> {{i.name}} </p>
-                    
-                </div>
-
-            </div> }
+                <div *ngFor="let i of category"
+                class="clickable-category"
+                (click)="onCategoryClick(i)">
+                <a [routerLink]="[i.link]" [queryParams]="{ category: i.category }">
+             <div class="img">
+               <img class="plant-image"
+                    [ngClass]="{'selected-category': selectedCategory.toLowerCase() === i.name.trim().toLowerCase()}"
+                    [src]="i.url">
+             </div>
+             <div class="plant">
+               <p style="margin-top: 15px;">{{ i.name }}</p>
+             </div>
+            </a>
+           </div>
+                  }
         </div>
     </div>
 </section>
@@ -26,7 +32,7 @@
 
         <p class="h1"> Pots & Accesories</p> <br>
         <div class="textbox2">
-            <p class="h2"> Showing {{displaypots.length}} out of {{displaypots.length}} results</p>
+            <p class="h2">   Showing {{ (filteredpots.length ? filteredpots.length : displaypots.length) }} out of {{ displaypots.length }} results</p>
             <div class="sort">
                 <p class="h3">Sort by:</p>
                 <div class="dropdown3">
@@ -91,3 +97,4 @@
 
 <app-potscategory *ngIf="displaypots.length" [pots]="filteredpots.length ? filteredpots : displaypots" [filter]="filter"></app-potscategory>
 <app-discount></app-discount>
+<app-footer></app-footer>

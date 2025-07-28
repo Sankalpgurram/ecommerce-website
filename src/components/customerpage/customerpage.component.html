@@ -14,7 +14,7 @@
                         <input type="text" placeholder="plants, seeds, fertilizers...." name="search"
                             id="search-container" style="border:none; color:#828282B2;background-color: transparent;"
                             [(ngModel)]="search" [class.shift]="isshift " (click)="movetext()" (click)="moveImage()"
-                            [readOnly]="!ismoved">
+                            [readOnly]="!ismoved" (ngModelChange)="applySearch()">
 
                     </div>
                     <img class="profile" src="assets/pics/Profile.jpg">
@@ -38,9 +38,11 @@
                                         <div class="upper-box">
                                             <div class="order-id" *ngFor="let k of sort">
                                                 <input type="radio" [id]="'radio-' + k.id" [name]="'myRadioGroup'"
-                                                    [value]="k.value" [(ngModel)]="selectedbtn">
-                                                <label [for]="'radio-' + k.id" id="order"
-                                                    name="order">{{k.name}}</label>
+                                                    [value]="k.value" [(ngModel)]="selectedbtn"
+                                                    (change)="setSort(k.value)">
+                                                <label [for]="'radio-' + k.id" id="order" name="order">
+                                                    <p class="para"> {{k.name}} </p>
+                                                </label>
 
                                             </div>
                                         </div>
@@ -48,14 +50,16 @@
 
                                         </div>
                                         <div class="down-box">
-                                            <div class="ascending">
+                                            <div class="ascending" [ngClass]="{'highlight': sortOrder === 'asc'}">
                                                 <img class="up-arrow" src="/assets/pics/up.png">
                                                 <p class="text4" (click)="sorting('asc')"> Ascending</p>
                                             </div>
-                                            <div class="descending">
+
+                                            <div class="descending" [ngClass]="{'highlight': sortOrder === 'dsc'}">
                                                 <img class="down-arrow" src="/assets/pics/down.png">
                                                 <p class="text5" (click)="sorting('dsc')"> Descending</p>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -65,56 +69,56 @@
 
 
                             <div class="dropdown2"> <button [ngClass]="{'bg-none': !color, 'bg-1':color}"
-                                (click)="visible()" class="filter">
-                                Filter
-                            </button>
-                            <div class="drop-content2" *ngIf="showcontent">
-                                <div class="filter-box">
-                                    <div class="left">
-                                        <div class="left-order">
-                                            <div class="box13" *ngFor="let k of filter"
-                                                [ngStyle]="{'background': k.background}"
-                                                (click)="changecolor(k.name)">
-                                                <p class="order-name">
-                                                    {{k.name}}
-                                                </p>
+                                    (click)="visible()" class="filter">
+                                    Filter
+                                </button>
+                                <div class="drop-content2" *ngIf="showcontent">
+                                    <div class="filter-box">
+                                        <div class="left">
+                                            <div class="left-order">
+                                                <div class="box13" *ngFor="let k of filter"
+                                                    [ngStyle]="{'background': k.background}"
+                                                    (click)="changecolor(k.name)">
+                                                    <p class="order-name">
+                                                        {{k.name}}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                        </div>
+                                        <div class="right">
+                                            <p class="clear" (click)="clearFilters()">Clear All</p>
+                                            <div class="date">
+                                                <div class="date-picker">
+                                                    <label for="id" class="end-date"> From</label>
+                                                    <input type="date" id="calendar" [(ngModel)]="fromDate">
+                                                </div>
+
+                                                <div class="date-picker1">
+                                                    <label for="id" class="to"> To</label>
+                                                    <input type="date" id="calendar" [(ngModel)]="toDate">
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="line">
+
+                                    <div class="button-box">
+                                        <button class="close" (click)="visible()">
+                                            <p class="text1">
+                                                Close
+                                            </p>
+                                        </button>
+
+                                        <button class="apply" (click)="applyFilter()" (click)="visible()">
+                                            <p class="text2">
+                                                Apply
+                                            </p>
+                                        </button>
                                     </div>
-                                    <div class="right">
-                                        <p class="clear" (click)="clearFilters()">Clear All</p>
-                                        <div class="date">
-                                            <div class="date-picker">
-                                                <label for="id" class="end-date"> From</label>
-                                                <input type="date" id="calendar" [(ngModel)]="fromDate">
-                                            </div>
-
-                                            <div class="date-picker1">
-                                                <label for="id" class="to"> To</label>
-                                                <input type="date" id="calendar" [(ngModel)]="toDate">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="button-box">
-                                    <button class="close" (click)="visible()">
-                                        <p class="text1">
-                                            Close
-                                        </p>
-                                    </button>
-
-                                    <button class="apply" (click)="applyFilter()" (click)="visible()">
-                                        <p class="text2">
-                                            Apply
-                                        </p>
-                                    </button>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -205,11 +209,10 @@
         </div>
     </div>
     <div class="pagination">
-        <a class="number" *ngFor="let page of [].constructor(totalpages); let i = index" 
-           (click)="gotopage(i+1)">
+        <a class="number" *ngFor="let page of [].constructor(totalpages); let i = index" (click)="gotopage(i+1)">
             {{ i + 1 }}
         </a>
-         
+
     </div>
-    
+
 </section>

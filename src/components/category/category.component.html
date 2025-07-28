@@ -7,15 +7,17 @@
         Bring Home Living Beauty. Grown with Care, Delivered with Love.
         </div>
         <div class="pics">
-            <div *ngFor=" let i of shopbycategory " [routerLink]="[i.link]">
-                <div class="img"> 
-                    <img class="plant-image" [src]="i.url"> </div>
-                <div class="plant">
-                    <p style="margin-top: 15px;"> {{i.name}} </p>
-                    
+            <div *ngFor="let i of shopbycategory">
+              <a [routerLink]="[i.link]" [queryParams]="{ category: i.category }">
+                <div class="img">
+                  <img class="plant-image" [src]="i.url" />
                 </div>
-
+                <div class="plant">
+                  <p style="margin-top: 15px;">{{ i.name }}</p>
+                </div>
+              </a>
             </div>
-        </div>
+          </div>
+      
     </div>
 </section>

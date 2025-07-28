@@ -7,7 +7,7 @@
                     src="/assets/pics/Icon (11).png "></button>
             <p class="para1">Promotions & Banners > Create Banner</p>
         </div>
-        <form (ngSubmit)="onSubmit()" >
+        <form (ngSubmit)="onSubmit()" #Bannerform="ngForm" >
             <div class-="banner-info">
                 <div class="header2">
                     <p class="header3"> Create Banner</p>
@@ -37,12 +37,12 @@
                         <div class="box3">
                             <div class="innerbox3">
                                 <label for="id" class="id"> Device Type</label>
-                                <input type="text" id="device" name="device" [(ngModel)]="Banner.type">
+                                <input type="text" id="device" name="device" [(ngModel)]="Banner.type" #devicetype="ngModel" required >
                             </div>
 
                             <div class="innerbox4">
                                 <label for="id" class="id"> Display Location</label>
-                                <input type="text" id="location" name="location" [(ngModel)]="Banner.location">
+                                <input type="text" id="location" name="location" [(ngModel)]="Banner.location" required>
                             </div>
                         </div>
 
@@ -91,7 +91,7 @@
 
                 </div>
             </div>
-            <button class="save" type="submit">
+            <button class="save" type="submit" [disabled]="!Bannerform.form.valid">
                 <p class=save-btn>Save Details</p>
             </button>
         </form>

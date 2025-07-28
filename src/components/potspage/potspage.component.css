@@ -139,7 +139,7 @@ color:   #002D3E;
     padding-left: 16px;
     border-radius: 24px;
     border-width: 1px;
-    border: 1px solid #BAD8C9;
+    border: 1px solid #D1CFCF;
     margin-left: 5px;
     margin-top: -2px;
     background-color: transparent;
@@ -274,7 +274,7 @@ height: 11px;
         align-items: center;
         padding-right: 10px;
     border-width: 1px;
-    border: 1px solid #BAD8C9;
+    border: 1px solid #D1CFCF;
     background: none;
     font-family: Inter;
     font-weight: 500;
@@ -466,3 +466,28 @@ cursor: pointer;
     color: #002D3E;
     cursor: pointer;
 }
+
+.year:hover{
+    border: 1px solid #BAD8C9;
+    box-shadow: 0px 1px 4px 0px #00000033;
+
+}
+
+.filter:hover{
+    border: 1px solid #BAD8C9;
+    box-shadow: 0px 1px 4px 0px #00000033;
+
+}
+
+ 
+.selected-category{
+    border: 2px solid #62E6A2;
+    background-color: #E3FFF2;
+  }
+  
+
+  .pics a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

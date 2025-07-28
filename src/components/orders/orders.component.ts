@@ -63,7 +63,7 @@ export class OrdersComponent implements OnInit {
       );
     }
   
-    this.payment = filteredItems; // important for pagination
+    this.payment = filteredItems;  
     this.totalpages = Math.ceil(this.payment.length / this.itemsperpage);
     this.currentpage = 1;
     this.calculatePageNumbers();
@@ -170,8 +170,8 @@ allitems:any;
     this.color = !this.color;
     if (this.showcontent) {
       this.showdata = false;
-    } }
-
+    } } 
+ 
   showdata: boolean = false;
 
   show() {
@@ -184,7 +184,6 @@ allitems:any;
     }
   }
 
-   
 
   selecteditemindex: number | null = null;
 
@@ -220,27 +219,24 @@ allitems:any;
         if (!item.checkoutDate) return false;
   
         const orderDate = new Date(item.checkoutDate);
-  
         return orderDate >= from && orderDate <= to;
       });
     }
   
-   
+    this.payment = filteredItems;   
     this.totalpages = Math.ceil(this.payment.length / this.itemsperpage);
     this.currentpage = 1;
-  
     this.calculatePageNumbers();
     this.paginateitems();
   }
   
   
   
-
   amountSort: string = '';
   selectedbtn: any;
   sorting(sortingOrder: 'asc' | 'dsc'): void {
     if (!this.selectedbtn) return;
-  
+    this.activeSort = sortingOrder;
  
     let sorted = [...this.payment];
   
@@ -262,19 +258,26 @@ allitems:any;
         });
         break;
     }
-  
+    
     this.payment = sorted;
     this.currentpage = 1;
     this.paginateitems();
   }
   
 
-  clearSort() {
-    this.selectedbtn = 'Amount';
-
-   
+  clearSort(): void {
+    this.selectedbtn = 'Amount';  
+    this.showdata = false;  
+  
+    this.activeSort = ''; 
+    this.payment = [...this.allitems.customer];
+  
+    this.currentpage = 1;
+    this.calculatetotalpages();
+    this.calculatePageNumbers();
+    this.paginateitems();
   }
-
+  
 
   clearFilters(): void {
     this.fromDate = '';
@@ -292,5 +295,12 @@ allitems:any;
   
   nextImagesrc: string = '/assets/pics/blueye.png';
 
+  setSort(field: string): void {
+    this.selectedbtn = field;
+  
+    if (this.activeSort) {
+      this.sorting(this.activeSort);  
+    }
+  }
   
 }

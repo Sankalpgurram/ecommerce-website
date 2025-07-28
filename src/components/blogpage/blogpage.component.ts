@@ -5,10 +5,11 @@ import { AboutComponent } from '../about/about.component';
 import { NeedComponent } from '../need/need.component';
 import { DataService } from '../../app/services/data.service';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-blogpage',
-  imports: [BlogComponent,DiscountComponent,AboutComponent,NeedComponent,NavbarComponent],
+  imports: [BlogComponent, DiscountComponent, AboutComponent, NeedComponent, NavbarComponent, FooterComponent],
   templateUrl: './blogpage.component.html',
   styleUrl: './blogpage.component.css'
 })

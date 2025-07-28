@@ -85,6 +85,8 @@ img:hover{
 }
 .plant-image:hover{
     border: 2px solid #62E6A2;
+    box-shadow: 1px 1px 12px 0px #00000040 inset;
+
 }
 
 .img {
@@ -93,3 +95,9 @@ img:hover{
     width: 194px;
     height: 178px;
 }
+
+.pics a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

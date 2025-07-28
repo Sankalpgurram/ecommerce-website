@@ -7,15 +7,20 @@
 
         <div class="pics">
             @if(category) {
-                <div *ngFor=" let i of category " [routerLink]="[i.link]">
-                    <div class="img"> 
-                        <img class="plant-image" [src]="i.url"> </div>
-                    <div class="plant">
-                        <p style="margin-top: 15px;"> {{i.name}} </p>
-                        
-                    </div>
-    
-                </div>
+                <div *ngFor="let i of category"
+                class="clickable-category"
+                (click)="onCategoryClick(i)">
+                <a [routerLink]="[i.link]" [queryParams]="{ category: i.category }">
+             <div class="img">
+               <img class="plant-image"
+                    [ngClass]="{'selected-category': selectedCategory.toLowerCase() === i.name.trim().toLowerCase()}"
+                    [src]="i.url">
+             </div>
+             <div class="plant">
+               <p style="margin-top: 15px;">{{ i.name }}</p>
+             </div>
+            </a>
+           </div>
         }
         </div>
     </div>
@@ -27,7 +32,10 @@
 
         <p class="h1"> Seeds</p> <br>
         <div class="textbox2">
-            <p class="h2"> Showing 8 out of {{displayseeds.length}} results</p>
+            <p class="h2">
+  Showing {{ (filteredseeds.length ? filteredseeds.length : displayseeds.length) }} out of {{ originalSeeds.length }} results
+</p>
+
             <div class="sort">
                 <p class="h3">Sort by:</p>
                 <div class="dropdown3">
@@ -65,9 +73,10 @@
                             <div class="left-order">
                                
                                 <div class="box13" *ngFor="let k of filter"
-                                    [ngStyle]="{'background': selectedFilters.includes(k.name) ? '#9EFFCD' : 'transparent'}"
+                                   
+                                  >
+                                    <p class="order-name"  [ngStyle]="{'color': selectedFilters.includes(k.name) ? 'green' : '#525356'}"
                                     (click)="changecolor(k.name)">
-                                    <p class="order-name">
                                         {{k.name}}
                                     </p>
                                 </div>
@@ -91,7 +100,8 @@
 
 </section>
 
-<app-seedcategory *ngIf="displayseeds.length" [seeds]="displayseeds" (pageditemscount)=" pageditemscount($event)">
+<app-seedcategory *ngIf="displayseeds.length"  [seeds]="filteredseeds.length ? filteredseeds : displayseeds" [filter]="filter" (pageditemscount)=" pageditemscount($event)">
 </app-seedcategory>
 
 <app-discount></app-discount>
+<app-footer></app-footer>

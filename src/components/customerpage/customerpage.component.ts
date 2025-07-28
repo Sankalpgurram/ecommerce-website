@@ -100,29 +100,38 @@ export class CustomerpageComponent implements OnInit {
 
   displayusers: any[] = [];
   retrievedata(): void {
-    const storedData = localStorage.getItem('users');
-    const orders = JSON.parse(localStorage.getItem('checkoutdetails') || '[]');
-
-    if (storedData) {
-      const users = JSON.parse(storedData);
-
-
-      this.displayusers = users.map((user: any) => {
+    const storedUserData = localStorage.getItem('users');
+    const storedOrderData = localStorage.getItem('checkoutdetails');
+  
+    if (storedUserData) {
+      const users = JSON.parse(storedUserData);
+      const orders = storedOrderData ? JSON.parse(storedOrderData) : [];
+  
+      this.allUsers = users.map((user: any) => {
         const userOrders = orders.filter((order: any) => order.username === user.username);
-
-
+  
         const lastOrder = userOrders.reduce((latest: any, current: any) => {
           return new Date(current.date) > new Date(latest?.date || 0) ? current : latest;
         }, null);
-
+  
+        const totalSpend = userOrders.reduce((sum: number, order: any) => sum + (order.amount || 0), 0);
+        const orderCount = userOrders.length;
+  
         return {
           ...user,
           lastOrderDate: lastOrder ? lastOrder.date : null,
-          paymentMethod: lastOrder ? lastOrder.payment : null
+          paymentMethod: lastOrder ? lastOrder.payment : null,
+          totalspend: totalSpend,
+          ordercount: orderCount
         };
       });
+      
+      this.displayusers = [...this.allUsers];
+      this.calculatetotalpages();
+      this.paginateitems();
     }
   }
+  
   selecteditemindex: number | null = null;
 
   toggle(index: number): void {
@@ -186,9 +195,11 @@ export class CustomerpageComponent implements OnInit {
     { id: 3, name: "Total Spend", value: "Total Spend" },
 
   ];
+  sortOrder: 'asc' | 'dsc' | null = null;
 
   selectedbtn: any;
   sorting(sortingOrder: 'asc' | 'dsc'): void {
+    this.sortOrder = sortingOrder;
     if (!this.selectedbtn || !this.displayusers?.length) return;
     const key =
       this.selectedbtn === 'Total Orders'
@@ -224,6 +235,8 @@ export class CustomerpageComponent implements OnInit {
   fromDate: string = '';
   toDate: string = '';
 
+  allUsers: any[] = []; 
+
 
   applyFilter(): void {
     let filteredItems = [...this.displayusers];
@@ -257,11 +270,44 @@ export class CustomerpageComponent implements OnInit {
     this.paginateitems();
   }
 
-  clearSort() {
-    this.selectedbtn = 'Amount';
-
-
+  clearSort(): void {
+    this.selectedbtn = 'Amount';  
+    this.sortOrder = null; 
+    this.showdata = false;  
+    this.retrievedata();  
+    this.calculatetotalpages();
+    this.currentpage = 1;
+    this.paginateitems();
   }
+  
+
+  applySearch(): void {
+  let filteredItems = [...this.allUsers];  
+
+  if (this.search && this.search.trim()) {
+    filteredItems = filteredItems.filter((item: any) =>
+      item.username?.toLowerCase().includes(this.search.toLowerCase()) ||
+      item.id?.toLowerCase().includes(this.search.toLowerCase())
+    );
+  }
+
+  this.displayusers = filteredItems;
+  this.totalpages = Math.ceil(this.displayusers.length / this.itemsperpage);
+  this.currentpage = 1;
+  this.paginateitems();
+}
+
+  
+setSort(field: string): void {
+  this.selectedbtn = field;
+
+ 
+  if (this.sortOrder) {
+    this.sorting(this.sortOrder);
+    this.currentpage = 1;
+    this.paginateitems();
+  }
+}
 
 
 }

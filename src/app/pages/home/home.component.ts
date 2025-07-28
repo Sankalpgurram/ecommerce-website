@@ -14,11 +14,12 @@ import { ProductService } from '../../services/product.service';
 import { DataService } from '../../services/data.service';
 import { InventoryComponent } from '../../../components/inventory/inventory.component';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from '../../../components/footer/footer.component';
  
 @Component({
   selector: 'app-home-component',
   imports: [RouterLink, HomeComponentComponent, CategoryComponent, ProductsComponent, DiscountComponent,
-    AboutComponent, NeedComponent, BlogComponent, LoginpageComponent, InventoryComponent, NavbarComponent,NavbarComponent,CommonModule],
+    AboutComponent, NeedComponent, BlogComponent, LoginpageComponent, InventoryComponent, NavbarComponent,NavbarComponent,CommonModule,FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
